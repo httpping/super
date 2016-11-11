@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.vp.loveu.widget.RatioLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                vp:ratio="1"
+                vp:relative="width" >
+
+                <ImageView
+                    android:id="@+id/channel_item_iv_icon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="340dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/demo" />
+            </com.vp.loveu.widget.RatioLayout>
+
+            <ImageView
+                android:id="@+id/channel_item_iv_free1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/free" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/channel_item_iv_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="挽回教学视频" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.vp.loveu.widget.RatioLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                vp:ratio="1"
+                vp:relative="width" >
+
+                <ImageView
+                    android:id="@+id/channel_item_iv_icon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="340dp"
+                    android:scaleType="fitXY" />
+            </com.vp.loveu.widget.RatioLayout>
+
+            <ImageView
+                android:id="@+id/channel_item_iv_free2"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/free"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/channel_item_iv_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+   android:background="@color/user_and_more_selector_bg"
+    android:gravity="center_vertical" >
+    
+    <ImageView 
+        android:id="@+id/discover_item_icon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <TextView
+        android:id="@+id/discover_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:text="PUA课堂"
+        android:textColor="@color/normal_textView_color"
+        android:drawableRight="@drawable/icon_more"
+        android:textSize="15sp" />
+
+</LinearLayout>

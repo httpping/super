@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:background="@color/white" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/hot_item_framelayout"
+        android:layout_width="43dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+         >
+
+        <TextView
+            android:id="@+id/hot_item_tv_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="55"
+            android:textColor="@color/top_title_text_color"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <com.vp.loveu.widget.CircleImageView
+        android:id="@+id/hot_item_iv_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        vp:civ_border_width="0dip"
+        android:layout_toRightOf="@id/hot_item_framelayout"
+        android:scaleType="centerCrop"
+        android:src="@drawable/overlayer" />
+
+    <TextView
+        android:id="@+id/hot_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/hot_item_iv_icon"
+        android:text="1"
+        android:textColor="@color/top_title_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/hot_item_tv_intergral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="1"
+        android:textColor="@color/green_public"
+        android:textSize="18sp" />
+
+</RelativeLayout>

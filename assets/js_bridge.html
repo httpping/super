@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<meta charset=utf-8>
+<head>
+    <title>爱U Js Api：JSBridge</title>
+</head>
+<body>
+    <section class=mod-page-body>
+        <div class="mod-page-main wordwrap clearfix">
+            <div class=mod-pageheader></div>
+            <div class=mod-pagecontent>
+                <div class=mod-weixinjsapi>
+                    <div class=x-desc>爱U Js Api：JSBridge</div>
+                    <div id=JsApi>
+                        <input type="button" value="收藏" onclick="doFavorite(1)" />
+                        <input type="button" value="取消收藏" onclick="doFavorite(2)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="http://115.29.244.85:9714/common/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="http://115.29.244.85:9714/admin/scripts/json.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function (callback) {
+            if (window.LvUJsBridge) {
+                callback(LvUJsBridge)
+            } else {
+                if (document.addEventListener) {
+                    document.addEventListener(
+                        'LvUJsBridgeReady', function () {
+                            callback(LvUJsBridge)
+                        },
+                        false
+                    );
+                }
+            }
+        })(function (bridge) {//init
+            bridge.init(function (message, responseCallback) {
+                var data = { 'jsResponse': 'Wee!' };
+                responseCallback(data);
+            });
+        });
+        //收藏
+        function doFavorite(type) {
+            var id = prompt("输入收藏资讯ID", "1") || 0;
+            if (type == 1) {
+                window.LvUJsBridge.invoke("add_favorite", { id: id, type: 1 }, function (options) {
+                    alert(JSON.stringify(options));
+                });
+            } else {
+                window.LvUJsBridge.invoke("remove_favorite", { id: id, type: 1 }, function (options) {
+                    alert(JSON.stringify(options));
+                });
+            }
+        }
+    </script>
+</body>
+</html>

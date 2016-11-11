@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 切换的 上部分 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/text_my"
+            android:text="排名" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="58dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:textSize="12dp"
+            android:textColor="@color/text_my"
+            android:text="昵称" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:textColor="@color/text_my"
+            android:text="积分" />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:background="@color/bg_gray"
+        android:scrollbars="none"
+        android:id="@+id/hot_listview"
+        android:layout_width="fill_parent"
+        android:dividerHeight="1px"
+        android:divider="@color/divide_line_bg"
+        android:layout_height="fill_parent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

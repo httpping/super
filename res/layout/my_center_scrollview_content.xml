@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical" >
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="26dip"
+                android:layout_marginRight="38dip"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="收藏"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="26dip"
+                android:layout_marginLeft="38dip"
+                android:background="#EEEEEE" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_center_bt_editinfos"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="修改资料"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_center_bt_flow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="关注/粉丝"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- 下部分功能导航 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:background="@color/bg_gray" />
+
+    <LinearLayout
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:orientation="vertical" >
+
+        <!-- 我的活动 -->
+
+        <LinearLayout
+            android:id="@+id/my_center_my_active"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_height="50dip" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_active_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/my_center_active_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dip"
+                    android:singleLine="true"
+                    android:text="我的活动  (3)"
+                    android:textColor="#222222"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 我的红娘推荐列表 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFD8D8D8" />
+
+        <LinearLayout
+            android:id="@+id/my_center_my_dll"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:layout_width="45dip"
+                android:layout_height="50dip" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_dll_logo" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:singleLine="true"
+                android:text="动态"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- 我的支付 -->
+
+        <LinearLayout
+            android:id="@+id/my_center_my_palyer"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="20dip"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:layout_width="45dip"
+                android:layout_height="50dip" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_play_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dip"
+                    android:singleLine="true"
+                    android:text="我的支付"
+                    android:textColor="#222222"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFD8D8D8" />
+        <!-- 活动签到 -->
+
+        <LinearLayout
+            android:id="@+id/my_center_active_sing"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:layout_width="45dip"
+                android:layout_height="50dip" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/active_sign" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:singleLine="true"
+                android:text="活动签到"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- 帐号设置 -->
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dip"
+            android:id="@+id/my_center_my_money"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#ffffff"
+             >
+
+            <RelativeLayout
+                android:layout_width="45dip"
+                android:layout_height="50dip" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_money_logo" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:singleLine="true"
+                android:text="钱包"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/promo_code_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FFD8D8D8"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/my_center_my_promo_code"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:layout_width="45dip"
+                android:layout_height="50dip" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/my_promotion_code" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:singleLine="true"
+                android:text="优惠码管理"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

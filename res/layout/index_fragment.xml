@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 轮播图 -->
+
+        <FrameLayout
+            android:id="@+id/index_viewpager_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <!-- 功能导航 -->
+
+        <FrameLayout
+            android:id="@+id/index_method_navigation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <!-- 活动展示 -->
+
+        <FrameLayout
+            android:id="@+id/index_active_shows"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <!-- 精彩推荐 -->
+
+        <FrameLayout
+            android:id="@+id/index_video_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <!-- 用户推荐 -->
+
+        <FrameLayout
+            android:id="@+id/index_hot_user_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip" >
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

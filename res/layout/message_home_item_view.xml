@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/user_and_more_selector_bg" >
+
+        <ImageView
+            android:id="@+id/left_image_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/message_invite_requst_icon" />
+
+        <TextView
+            android:id="@+id/center_txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/left_image_logo"
+            android:textSize="15dp"
+            android:textColor="#222222"
+            android:text="爱U官方通知" />
+
+        <TextView
+            android:id="@+id/right_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/message_red_point_bg"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+    </RelativeLayout>

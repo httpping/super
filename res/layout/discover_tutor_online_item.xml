@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:background="@color/user_and_more_selector_bg"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+   
+   <RelativeLayout
+       android:id="@+id/discover_item_iv_containter"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dip" >
+
+            <com.vp.loveu.widget.CircleImageView
+                android:id="@+id/discover_item_iv_icon"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/a1"
+                />
+
+            <TextView
+                android:id="@+id/discover_item_tv_level"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/circle_text_style"
+                android:gravity="center"
+                android:text="V2"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </RelativeLayout>
+        
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dip"
+        android:layout_toRightOf="@id/discover_item_iv_containter"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/discover_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anina"
+            android:textColor="#333333"
+            android:textSize="16dip" />
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+           <TextView
+                   android:id="@+id/discover_item_tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#10BB7D"
+                    android:textSize="@dimen/sub_textView_size10"
+                      android:background="@drawable/discover_course_detail_tv_shape"
+                    android:text="认证导师" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+<View 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/divide_line_bg"
+    android:layout_marginBottom="1px"
+    />
+</LinearLayout>

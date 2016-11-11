@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <com.vp.loveu.widget.PublicTitleView
+            android:id="@+id/public_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:clickable="true" >
+        </com.vp.loveu.widget.PublicTitleView>
+
+        <EditText
+            android:id="@+id/upload_audio_title"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:background="@null"
+            android:hint="请输入音频标题"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:textColor="#222222"
+            android:textColorHint="#CCCCCC"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/upload_audio_btn_select_file"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:drawableRight="@drawable/white_icon_more"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:singleLine="true"
+            android:text="请选择手机音频文件"
+            android:textColor="#CCCCCC"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/select_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <ImageView
+                android:id="@+id/selected_photo"
+                android:layout_width="44dip"
+                android:layout_height="44dip"
+                android:layout_centerVertical="true" /> 
+            <TextView
+                android:id="@+id/photo_tv"
+                android:layout_width="wrap_content"
+                android:textColor="#CCCCCC"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="请选择音频封面图" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/white_icon_more" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/audio_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dip"
+        android:text="阅读《上传音频须知》"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+</RelativeLayout>

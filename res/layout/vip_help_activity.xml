@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/publi_fell_help_my_help" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:text="支付方式"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/vip_help_weixin_play"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="4dip"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/vip_help_iv_icon"
+            android:layout_width="27dip"
+            android:layout_height="27dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/icon_weixin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/vip_help_iv_icon"
+            android:text="微信支付"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/vip_help_ib_weixin_paly"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@null"
+            android:src="@drawable/icon_play_no_select_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:id="@+id/vip_help_ali_play"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="4dip"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/vip_help_iv_icon2"
+            android:layout_width="27dip"
+            android:layout_height="27dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/icon_zhifubao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/vip_help_iv_icon2"
+            android:text="支付宝支付"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/vip_help_ib_ali_paly"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@null"
+            android:src="@drawable/icon_play_no_select_btn" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:text="支付成功后将有专人为你60秒语音解答"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="（工作日09:00-18:00）"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/vip_help_bt_commit"
+            android:layout_width="fill_parent"
+            android:layout_height="49dip"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#FF8000"
+            android:text="确认支付1元"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

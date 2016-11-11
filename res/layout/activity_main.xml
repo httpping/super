@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 切换的 上部分 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/divier"
+        android:layout_below="@+id/public_title_view" >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/home_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/home_rb_one"
+            style="@style/TabStyle"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/home_rb_two"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/tab_find_selector"
+            android:text="频道" />
+
+        <RadioButton
+            android:id="@+id/home_rb_three"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/tab_addreport_selector"
+            android:text="发现" />
+
+        <com.vp.loveu.message.view.MessageRedPointRadioView
+            android:id="@+id/home_rb_fours"
+            style="@style/TabStyle"
+            android:drawableTop="@drawable/tab_message_selector"
+            android:text="对话" />
+    </RadioGroup>
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:clickable="true" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <View
+        android:id="@+id/divier"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:background="#999999" />
+</RelativeLayout>

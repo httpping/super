@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/my_index_info_three_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="标题"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.vp.loveu.widget.ScrollerNumberPicker
+            android:id="@+id/my_index_info_three_one_dialog_picker"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            su:itemNumber="3"
+           su:lineColor="@color/green_public"
+            su:maskHight="32dp"
+            su:noEmpty="true"
+            su:normalTextColor="#777"
+            su:normalTextSize="14sp"
+            su:selecredTextColor="#ff000000"
+            su:selecredTextSize="22sp"
+            su:unitHight="50dp" />
+
+        <com.vp.loveu.widget.ScrollerNumberPicker
+            android:id="@+id/my_index_info_three_two_dialog_picker"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            su:itemNumber="3"
+            su:lineColor="@color/green_public"
+            su:maskHight="32dp"
+            su:noEmpty="true"
+            su:normalTextColor="#777"
+            su:normalTextSize="14sp"
+            su:selecredTextColor="#ff000000"
+            su:selecredTextSize="22sp"
+            su:unitHight="50dp" />
+
+        <com.vp.loveu.widget.ScrollerNumberPicker
+            android:id="@+id/my_index_info_three_three_dialog_picker"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            su:itemNumber="3"
+            su:lineColor="@color/green_public"
+            su:maskHight="32dp"
+            su:noEmpty="true"
+            su:normalTextColor="#777"
+            su:normalTextSize="14sp"
+            su:selecredTextColor="#ff000000"
+            su:selecredTextSize="22sp"
+            su:unitHight="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/line"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/my_index_info_three_one_dialog_frist_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0.75dp"
+            android:layout_marginTop="1.5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="@color/green_public"
+            android:textSize="@dimen/text_size_two" />
+
+        <Button
+            android:id="@+id/my_index_info_three_one_dialog_two_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.75dp"
+            android:layout_marginTop="1.5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="确定"
+           android:textColor="@color/green_public"
+            android:textSize="@dimen/text_size_two" />
+    </LinearLayout>
+
+</LinearLayout>

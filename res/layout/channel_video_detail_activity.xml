@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <!-- 头部标题 -->
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <ScrollView
+        android:id="@+id/channel_video_sl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="93dp"
+        android:layout_marginTop="44dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/channel_video_iv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/channel_video_learn_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF7A01"
+                    android:textSize="@dimen/sub_textView_size12" />
+
+                <TextView
+                    android:id="@+id/channel_video_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/normal_textView_color"
+                    android:textSize="@dimen/sub_textView_size12" />
+
+                <TextView
+                    android:id="@+id/channel_video_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/normal_textView_color"
+                    android:textSize="@dimen/sub_textView_size12" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/channel_tv_video_count"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/sub_textView_color66"
+                android:textSize="@dimen/sub_textView_size14" />
+
+            <LinearLayout
+                android:id="@+id/channel_video_others_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            
+            <!-- 打赏按钮 -->
+            <TextView
+                android:id="@+id/reward_pay"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="100dip"
+                android:layout_height="30dip"
+                android:background="@drawable/reward_bg_shape"
+                android:text="打赏"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/channel_video_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/channel_video_total_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FF7A00"
+            android:textSize="@dimen/sub_textView_size12" />
+
+        <com.vp.loveu.widget.ZanAllHeadView
+            android:id="@+id/channel_users"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            vp:is_showNum="false" >
+        </com.vp.loveu.widget.ZanAllHeadView>
+    </LinearLayout>
+
+</RelativeLayout>

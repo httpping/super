@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+     >
+     
+        <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+  
+    <ImageView 
+        android:layout_marginTop="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/discover_upload_success"
+        />
+    
+    <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交成功!"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        />
+    <TextView 
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你发的纸条，红娘已经收到了！等着吧，红娘这就给你找合适 的对象！找到了就立马给你电话！"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        />
+    
+    <TextView
+        android:id="@+id/discover_matchmaker_back"
+        style="@style/login_text_style"
+        android:gravity="center" 
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="返回"
+        android:textColor="#10BB7D"
+        android:textSize="14sp"
+        android:background="@drawable/discover_textview_shape"
+        />
+    
+
+</LinearLayout>

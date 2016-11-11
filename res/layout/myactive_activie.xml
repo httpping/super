@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/my_active_listview"
+        android:layout_width="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

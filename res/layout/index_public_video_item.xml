@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingTop="15dip"
+    android:paddingBottom="15dip" >
+
+    <FrameLayout
+        android:id="@+id/index_video_flag"
+        android:layout_width="80dip"
+        android:layout_height="60dip"
+        android:layout_marginLeft="15dip" >
+
+        <ImageView
+            android:id="@+id/index_video_iv_logo"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/index_video_play_start"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_index_video_play" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="62dip"
+        android:layout_marginLeft="15dip"
+        android:paddingRight="15dip"
+        android:layout_toRightOf="@id/index_video_flag"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/index_video_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+             android:lineSpacingExtra="3dp"
+            android:text="我和女神的最后一电如何 翻盘虏获女神芳心"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/index_video_tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:text="汪星人"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

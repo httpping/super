@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:clickable="true" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <EditText
+        android:id="@+id/heart_edit_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="top"
+        android:paddingLeft="15dip"
+        android:paddingTop="20dip"
+        android:textSize="15sp"
+        android:textColor="#222222"
+        android:hint="说点什么..." />
+
+    <TextView
+        android:paddingLeft="15dip"
+        android:paddingTop="20dip"
+        android:id="@+id/heart_show_Text"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

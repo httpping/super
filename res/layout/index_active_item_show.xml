@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:id="@+id/index_active_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="90dip" >
+
+    <ImageView
+        android:id="@+id/index_active_iv_background_one"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/index_active_iv_background_two"
+        android:layout_width="50dip"
+        android:layout_alignParentRight="true"
+        android:layout_height="90dip"
+        android:background="@color/decorate_background" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/index_active_tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/index_active_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:text="活动时间  : 2015-11-21"
+            android:textColor="#F2F2F2"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/index_active_progress_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已报名"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <ProgressBar
+                android:id="@+id/index_active_progressBar"
+                style="@style/horzitalprogressbar_style"
+                android:layout_width="121dip"
+                android:layout_height="5dip"
+                android:layout_marginLeft="5dip"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/index_active_tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/index_active_iv_icon_in"
+        android:layout_width="6dip"
+        android:layout_height="12dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dip"
+        android:src="@drawable/icon_in" />
+
+</RelativeLayout>

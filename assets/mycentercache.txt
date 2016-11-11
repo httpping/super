@@ -1,0 +1,1 @@
+{"data":"{\"birthday\":\"2015-12-31\",\"sex\":1,\"mt\":\"\",\"uid\":69,\"nickname\":\"\",\"portrait\":\"\",\"photos\":[],\"dating_status\":0,\"area_code\":\"\"}","code":0,"msg":"成功","is_encrypt":1}

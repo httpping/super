@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/publi_fell_help_my_help" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line_bg" />
+
+    <TextView
+        android:id="@+id/publi_fell_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#999999"
+        android:paddingBottom="10dip"
+        android:text="解答回复" />
+
+    <LinearLayout
+        android:id="@+id/publi_aswer_ly_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="5dp" >
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/publi_aswer_line"
+         android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:background="@color/bg_gray"/>
+
+</LinearLayout>

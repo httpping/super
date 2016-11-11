@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="fill_parent"
+    android:layout_height="255dip" >
+
+    <!-- 这里实现背景图像模糊化 -->
+
+    <ImageView
+        android:id="@+id/my_center_big_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:background="#90000000"  />
+      <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#90000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="100dip"
+            android:layout_height="90dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dip" >
+
+            <com.vp.loveu.widget.CircleImageView
+                android:id="@+id/my_center_iv_logo"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/a1"
+                vp:civ_border_width="2dip"
+                vp:civ_border_color="#a0ffffff" />
+
+            <TextView
+                android:id="@+id/my_center_tv_grade"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/circle_text_style"
+                android:gravity="center"
+                android:text="V2"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/my_center_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="MOMO"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+            
+
+            <TextView
+                android:id="@+id/my_center_tv_alias"
+                android:layout_width="42dip"
+                android:layout_height="16dip"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/my_center_daoshi_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:paddingTop="1dip"
+                android:text="导师"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+     <!-- <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/my_center_iv_back"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:padding="10dip"
+            android:src="@drawable/icon_back_whiter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/my_center_iv_share"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="10dip"
+                android:src="@drawable/my_btn_share" />
+
+            <ImageView
+                android:id="@+id/my_center_iv_setting"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="10dip"
+                android:src="@drawable/icon_setting" />
+        </LinearLayout>
+    </FrameLayout> -->
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="20dip"
+         android:layout_alignParentLeft="true" >
+
+         <View
+             android:id="@+id/center_flag"
+             android:layout_width="1dip"
+             android:layout_height="17dip"
+             android:layout_centerInParent="true"
+             android:alpha="0.5"
+             android:background="#ffffff" />
+
+         <LinearLayout
+             android:id="@+id/my_center_integral"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_toLeftOf="@id/center_flag"
+             android:gravity="center_horizontal"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/my_center_tv_integral"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:singleLine="true"
+                 android:text="100"
+                 android:textColor="#FFFFFFFF"
+                 android:textSize="18sp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dip"
+                 android:singleLine="true"
+                 android:text="我的积分"
+                 android:textColor="#FFFFFFFF"
+                 android:textSize="10sp"
+                 android:textStyle="normal" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/my_center_ranking"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/center_flag"
+             android:gravity="center_horizontal"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/my_center_tv_hot_rank"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:singleLine="true"
+                 android:text="178"
+                 android:textColor="#FFFFFFFF"
+                 android:textSize="18sp" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dip"
+                 android:singleLine="true"
+                 android:text="活跃排名"
+                 android:textColor="#FFFFFFFF"
+                 android:textSize="10sp"
+                 android:textStyle="normal" />
+         </LinearLayout>
+     </RelativeLayout>
+
+</RelativeLayout>

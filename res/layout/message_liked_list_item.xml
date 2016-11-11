@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp" >
+
+        <com.vp.loveu.widget.CircleImageView
+            android:id="@+id/message_liked_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/overlayer" />
+
+        <TextView
+            android:id="@+id/message_liked_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/message_liked_portrait"
+            android:text="娜娜"
+            android:textColor="#262626"
+            android:textSize="@dimen/sub_textView_size15" />
+
+        <TextView
+            android:id="@+id/message_liked_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="3分钟前"
+            android:textColor="#D8D8D8"
+            android:textSize="@dimen/sub_textView_size12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_liked_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/channel_topic_likeed"
+        android:gravity="center_vertical"
+        android:text="给你点了赞"
+        android:textColor="#10BB7D"
+        android:textSize="@dimen/sub_textView_size12" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="37dip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#D8D8D8" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/message_liked_src_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/sub_textView_color99"
+                android:textSize="@dimen/sub_textView_size14" />
+
+            <ImageView
+                android:id="@+id/message_default_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/channel_topic_reply_default_icon"
+                android:visibility="gone" />
+
+            <com.vp.loveu.index.widget.RecoderFrameLayout
+                android:id="@+id/radio"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.vp.loveu.index.widget.RecoderFrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+     >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+  
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_add_coupon"
+        android:layout_below="@+id/public_title_view" >
+
+      <LinearLayout  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 切换的 上部分 -->
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:paddingLeft="15dp"
+    android:background="@color/white"
+     >
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/sub_textView_size14"
+        android:textColor="@color/normal_textView_color"
+        />
+
+    <TextView
+        android:id="@+id/course_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/course_name"
+        android:textColor="@color/share_text_color"
+        android:textSize="@dimen/sub_textView_size12"
+        android:text="" />
+ 
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+  android:background="@color/divide_line_bg"
+     />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp" 
+   android:background="@color/white"
+   android:paddingLeft="15dp"
+   android:paddingRight="15dp"
+    >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/desc_modify_price_hint"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <EditText
+        android:id="@+id/modify_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="@color/write"
+        android:ems="10"
+        android:maxLength="8"
+        android:inputType="numberDecimal"  
+        android:hint="@string/desc_remind_please_add_price_hint"
+        android:textColorHint="@color/normal_my_gray"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <TextView
+        android:id="@+id/modify_price_error_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/modify_price"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textColor="@color/share_text_color"
+        android:paddingBottom="6dp"
+        android:textSize="@dimen/sub_textView_size10" />
+
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/divide_line_bg"
+   />
+
+<RelativeLayout
+        android:id="@+id/begin_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/desc_course_begin_time_hint"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <TextView
+        android:id="@+id/coupon_begin_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/TextView04"
+        android:background="@color/write"
+        android:singleLine="true"
+        android:editable="false"
+        android:clickable="false"
+        android:textColorHint="@color/normal_my_gray"
+        android:hint="@string/desc_course_time_hint"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/my_promotion_code_add_select" />
+
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+       android:background="@color/divide_line_bg"
+ />
+
+<RelativeLayout
+       android:id="@+id/endtime_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/desc_course_end_time_hint"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <TextView
+        android:id="@+id/coupon_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/TextView03"
+        android:background="@color/write"
+        android:editable="false"
+        android:clickable="false"
+        android:ems="10"
+        android:singleLine="true"
+         android:textColorHint="@color/normal_my_gray" 
+        android:hint="@string/desc_course_time_hint"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/my_promotion_code_add_select" />
+</RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/divide_line_bg"
+     />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/desc_course_coupon_code"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <EditText
+        android:id="@+id/coupon_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/TextView06"
+        android:background="@color/write"
+        android:ems="10"
+        android:hint="@string/desc_course_coupon_code_hint"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColorHint="@color/normal_my_gray"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <TextView
+        android:id="@+id/coupon_error_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/coupon_code"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="6dp"
+        android:textColor="@color/share_text_color"
+        android:textSize="@dimen/sub_textView_size10" />
+</RelativeLayout>
+
+
+
+</LinearLayout>
+         
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/share_text_color"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sub_textView_size16"
+        android:text="@string/desc_course_coupon_code_submit" />
+
+</RelativeLayout>

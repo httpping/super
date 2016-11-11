@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp" >
+
+        <com.vp.loveu.widget.CircleImageView
+            android:id="@+id/message_comment_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/overlayer" />
+
+        <TextView
+            android:id="@+id/message_comment_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/message_comment_portrait"
+            android:text="娜娜"
+            android:textColor="#262626"
+            android:textSize="@dimen/sub_textView_size15" />
+
+        <TextView
+            android:id="@+id/message_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="3分钟前"
+            android:textColor="#D8D8D8"
+            android:textSize="@dimen/sub_textView_size12" />
+    </RelativeLayout>
+
+    <!-- 回复的内容 -->
+
+    <TextView
+        android:id="@+id/message_comment_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <com.vp.loveu.channel.widget.TopicPicContainer
+        android:id="@+id/message_comment_pic_ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:visibility="gone" />
+
+    <com.vp.loveu.index.widget.RecoderFrameLayout
+        android:id="@+id/message_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+    </com.vp.loveu.index.widget.RecoderFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#D8D8D8" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/message_comment_src_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="我和我女朋友分手了，心里很难过，我该怎么办，心 里好堵啊！心里好堵啊心里好堵啊心里好堵啊…"
+                android:textColor="@color/sub_textView_color99"
+                android:textSize="@dimen/sub_textView_size14" />
+
+            <ImageView
+                android:id="@+id/message_default_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/channel_topic_reply_default_icon"
+                android:visibility="gone" />
+
+            <com.vp.loveu.index.widget.RecoderFrameLayout
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                 android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </com.vp.loveu.index.widget.RecoderFrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

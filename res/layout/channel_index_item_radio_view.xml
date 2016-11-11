@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/user_and_more_selector_bg">
+    
+    <View 
+     android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:background="@color/divide_line_bg"
+    android:layout_height="1px"
+     android:layout_marginBottom="1px"  />
+    
+ <ImageView 
+     android:id="@+id/channel_radio_icon_left"
+     android:layout_width="23dp"
+     android:layout_height="23dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="13dp"
+     android:src="@drawable/icon_love_radio"
+     />
+   <ImageView 
+		android:id="@+id/channel_radio_icon_right"
+       android:layout_width="15dp"
+       android:layout_height="15dp"
+       android:layout_marginRight="20dp"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:src="@drawable/chanel_radio_logo1"
+       />
+   
+   <TextView 
+           android:layout_toRightOf="@id/channel_radio_icon_left"
+           android:layout_toLeftOf="@id/channel_radio_icon_right"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+          android:layout_marginTop="13dp"
+           android:id="@+id/channel_radio_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ellipsize="end"
+           android:singleLine="true"
+           android:textColor="@color/normal_textView_color"
+           android:textSize="@dimen/sub_textView_size15"
+           android:text="条件不怎么样的坏男生怎么找女友?"
+       />
+   
+     <TextView 
+		        android:id="@+id/channel_radio_listener"
+		        android:layout_toRightOf="@id/channel_radio_icon_left"
+		        android:layout_marginLeft="20dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="xxx人正在收听"
+		        android:textColor="@color/sub_textView_color99"
+		        android:textSize="@dimen/sub_textView_size10"
+		       android:layout_alignParentBottom="true"
+               android:layout_marginBottom="10dp"
+		        />
+    	<TextView 
+    	    android:layout_toRightOf="@id/channel_radio_listener"
+		        android:id="@+id/channel_radio_tutor"
+		        android:layout_marginLeft="30dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="导师:xxxx"
+		        android:textColor="@color/sub_textView_color99"
+		        android:textSize="@dimen/sub_textView_size10"
+		        android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+		        />
+    	
+
+</RelativeLayout>
+</FrameLayout>

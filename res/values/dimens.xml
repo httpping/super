@@ -1,0 +1,139 @@
+<resources>
+      <!-- Default screen margins, per the Android Design guidelines. -->
+      
+      
+    <dimen name="txt_size_edittext">13dp</dimen>
+    
+    <dimen name="message_head_imgage_margin">12dp</dimen>
+    
+    <dimen name="public_title_height">44dp</dimen>
+      
+    <!-- add by pzj 自定义头像列表-->
+    <dimen name="portrait_view_width">40dp</dimen>
+    <dimen name="portrait_view_height">40dp</dimen>
+    <dimen name="portrait_view_radius">20dp</dimen>   
+    <dimen name="portrait_view_padding">8dp</dimen>   
+    <dimen name="portrait_view_stroke">0.5dp</dimen>   
+    <dimen name="portrait_view_text_size10">10sp</dimen>
+    <dimen name="portrait_view_text_size12">12sp</dimen>
+    <dimen name="portrait_view_text_size14">14sp</dimen>
+    <!-- end 自定义头像列表-->
+    
+    <!-- 多图片选择 -->
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+    
+    
+    <!-- publicTop item -->
+    <dimen name="top_title_text_size">16sp</dimen>
+    <dimen name="top_btn_text_size">14sp</dimen>
+    <dimen name="top_btn_image_width">30dp</dimen>
+    <dimen name="top_btn_image_height">30dp</dimen>
+    
+    <dimen name="normal_btn_text_size">14sp</dimen>
+    <dimen name="big_btn_text_size">16sp</dimen>
+    <dimen name="normal_editText_size">14sp</dimen>
+    <dimen name="big_editText_size">16sp</dimen>
+    <!-- 子标题 -->
+    <dimen name="sub_textView_size10">10sp</dimen>
+    <dimen name="sub_textView_size12">12sp</dimen>
+    <dimen name="sub_textView_size14">14sp</dimen>
+    <dimen name="sub_textView_size15">15sp</dimen>
+    <dimen name="sub_textView_size16">16sp</dimen>
+    <dimen name="sub_editText_size">12sp</dimen>
+    
+
+      
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_big">22dp</dimen>
+    <dimen name="text_size_title_right">16sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_one">20dp</dimen>
+    <dimen name="text_size_two">18dp</dimen>
+    <dimen name="text_size_three">16dp</dimen>
+    <dimen name="text_size_free">10dp</dimen>
+    <dimen name="text_size_five">12dp</dimen>
+    <dimen name="text_size_six">14dp</dimen>
+
+    <!-- MyFragment text -->
+    <dimen name="text_my_one">18sp</dimen>
+    <dimen name="text_my_two">16sp</dimen>
+    <dimen name="text_my_three">14sp</dimen>
+    <dimen name="text_my_four">12sp</dimen>
+    <dimen name="text_my_five">10sp</dimen>
+    <!-- MyFragment Layout head -->
+    <dimen name="layout_headview">110dp</dimen>
+    <dimen name="layout_headview_headiv">80dp</dimen>
+    <dimen name="layout_headview_headll">80dp</dimen>
+    <dimen name="layout_headview_headtv1">30dp</dimen>
+    <dimen name="layout_headview_headtv2">25dp</dimen>
+    <dimen name="layout_headview_headiv_back">22dp</dimen>
+    <!-- MyFragment Layout item -->
+    <dimen name="layout_item">60dp</dimen>
+    <dimen name="layout_item_iv">40dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp11">11dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp13">13dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp65">65dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+    <dimen name="dp75">75dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp85">85dp</dimen>
+    <dimen name="dp90">90dp</dimen>
+    <dimen name="dp100">100dp</dimen>
+    <dimen name="dp150">150dp</dimen>
+    <dimen name="dp200">200dp</dimen>
+    <dimen name="textSize10">10sp</dimen>
+    <dimen name="textSize11">11sp</dimen>
+    <dimen name="textSize12">12sp</dimen>
+    <dimen name="textSize13">13sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize15">15sp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+    <dimen name="textSize17">17sp</dimen>
+    <dimen name="textSize18">18sp</dimen>
+    <dimen name="textSize19">19sp</dimen>
+    <dimen name="textSize20">20sp</dimen>
+    
+    
+    <dimen name="albumitem_height">100dp</dimen>
+    <dimen name="albumitem_content_height">80dp</dimen>
+    <dimen name="albumitem_image_height">20dp</dimen>
+
+    <!-- CheckBox相关 -->
+    <dimen name="checkbox_height">25dp</dimen>
+
+    <!-- Title 相关高度 -->
+    <dimen name="layout_title_heigh">45dp</dimen>
+    <dimen name="layout_title_content_heigh">30dp</dimen>
+    <dimen name="layout_title_mini_textsize">16sp</dimen>
+    
+    <!-- 图片选择界面Item相关 -->
+    <dimen name="sticky_item_horizontalSpacing">2dp</dimen>
+    <dimen name="sticky_item_verticalSpacing">2dp</dimen>
+    <dimen name="collection_photo_toolbar_height">45dp</dimen>
+	
+    <!-- 下拉刷新  tanping -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!-- end -->
+    
+</resources>

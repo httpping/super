@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:paddingLeft="15dip"
+    android:background="#ffffff"
+    android:paddingRight="15dip" >
+
+    <TextView
+        android:id="@+id/integral_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="分享app给好友"
+        android:singleLine="true"
+        android:textColor="#222222"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/integral_tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+50"
+            android:textColor="#10BB7D"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/integral_iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/white_icon_more" />
+    </LinearLayout>
+
+</RelativeLayout>

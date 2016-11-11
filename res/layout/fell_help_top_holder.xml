@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/fell_help_top_ed_content"
+        android:layout_width="fill_parent"
+        android:layout_height="82dip"
+        android:background="#ffffff"
+        android:gravity="start"
+        android:hint="请输入情感内容"
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="20dip"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:id="@+id/fell_help_top_iv_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fell_help_top_bt_select_photo"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="15dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feel_help_icon_crama" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="15dip"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/fell_help_top_tv_current_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#CCCCCC"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fell_help_top_tv_target_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/400"
+                android:textColor="#CCCCCC"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="111dip"
+        android:layout_marginTop="1dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fell_help_top_btn_one"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#15CCCCCC"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/fell_help_top_btn_one_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/fell_help_top_btn_one_iv_one"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:src="@drawable/fell_icon_btn_selecter" />
+
+                <TextView
+                    android:id="@+id/fell_help_top_btn_one_tv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:text="邀请5位用户"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fell_help_top_btn_one_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fell_help_top_btn_one_flag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="免费"
+                android:textColor="#FF8000"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="1px"
+            android:layout_marginRight="1px"
+            android:id="@+id/fell_help_top_btn_two"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/fell_help_top_btn_two_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/fell_help_top_btn_two_iv_two"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:src="@drawable/fell_icon_btn_two" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:text="情感达人解答"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fell_help_top_btn_two_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fell_help_top_btn_two_flag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="免费"
+                android:textColor="#FF8000"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fell_help_top_btn_three"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/fell_help_top_btn_three_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/fell_help_top_btn_three_iv_three"
+                    android:layout_width="26dip"
+                    android:layout_height="26dip"
+                    android:src="@drawable/fell_icon_btn_three" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:text="专业导师解答"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fell_help_top_btn_three_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fell_help_top_btn_three_flag"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dip"
+                android:text="免费"
+                android:textColor="#FF8000"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="#ffffff"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+
+        <!--
+             <TextView
+            android:id="@+id/fell_help_top_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="免费"
+            android:textColor="#FF8000"
+            android:textSize="14sp" />
+        -->
+
+        <TextView
+            android:id="@+id/fell_help_top_bt_commit"
+            android:layout_width="290dip"
+            android:layout_height="38dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/commit_shape"
+            android:text="提交"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" 
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/fell_help_top_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="#FF8000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人获得帮助"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:paddingBottom="10dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/history_tv_flag"
+        android:visibility="gone"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="往期活动"
+        android:layout_marginBottom="5dip"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/histor_item_ly_left"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/histor_item_iv_left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="119dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a3" />
+
+               <!--  <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="119dip"
+                    android:background="#70696969" /> -->
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/histor_item_tv_left_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="15dip"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="8dip"
+                android:paddingRight="5dip"
+                android:text="只为遇见你只为遇见 你只为遇见你"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="7dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间: "
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/histor_item_tv_left_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="2015-12-31"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/histor_item_ly_right"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/histor_item_iv_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="119dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a3" />
+
+               <!--  <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="119dip"
+                    android:background="#70696969" /> -->
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/histor_item_tv_right_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="15dip"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="8dip"
+                android:paddingRight="5dip"
+                android:text="只为遇"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="7dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/histor_item_tv_right_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="2015-12-31"
+                    android:textColor="#666666"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

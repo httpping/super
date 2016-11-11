@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/user_and_more_selector_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/discover_pua_empty_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <FrameLayout
+            android:layout_width="80dip"
+            android:id="@+id/discover_pua_list_flag"
+            android:layout_height="60dip"
+            android:layout_marginLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/discover_pua_list_iv_icon"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/a1"
+                android:scaleType="centerCrop" />
+             <ImageView
+            	android:id="@+id/index_video_play_start"
+            	android:layout_width="25dip"
+           		 android:layout_height="25dip"
+           	 	android:layout_gravity="center"
+           	 	android:src="@drawable/icon_index_video_play" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/discover_pua_list_desc_container"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_toRightOf="@id/discover_pua_list_flag"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/discover_pua_list_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:text="我和女神的最后一电,如何翻盘虏获女神的芳心"
+                android:textColor="@color/normal_textView_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/discover_pua_list_tv_tutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="汪星人"
+                android:textColor="@color/sub_textView_color99"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/discover_pua_empty_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/portrait_count_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/portrait_count"
+            android:layout_width="@dimen/portrait_view_width"
+            android:layout_height="@dimen/portrait_view_height"
+            android:background="@drawable/circle_text_shape"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="0"
+            android:textColor="#FF7A00"
+            android:textSize="@dimen/portrait_view_text_size12" />
+
+        <View
+            android:id="@+id/portrait_cut_line"
+            android:layout_width="@dimen/portrait_view_stroke"
+            android:layout_height="@dimen/portrait_view_width"
+            android:layout_marginLeft="@dimen/portrait_view_padding"
+            android:background="@color/portrait_view_border" />
+    </LinearLayout>
+
+</LinearLayout>

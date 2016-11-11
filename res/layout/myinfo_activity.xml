@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 切换的 上部分 -->
+
+    <ScrollView
+        android:background="@color/bg_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.vp.loveu.my.widget.CustomGridView
+                android:id="@+id/myinfo_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="10dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:paddingLeft="15dip"
+                android:paddingRight="20dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:verticalSpacing="10dip" >
+            </com.vp.loveu.my.widget.CustomGridView>
+
+            <RelativeLayout
+                android:id="@+id/myinfo_rl_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                android:layout_marginTop="20dip"
+                android:background="#ffffff"
+                android:paddingLeft="15dip"
+                android:paddingRight="20dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像" />
+
+                <com.vp.loveu.widget.CircleImageView
+                    android:id="@+id/myinfo_iv_icon"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_line_bg" />
+
+            <RelativeLayout
+                android:id="@+id/myinfo_rl_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:background="#ffffff"
+                android:paddingLeft="15dip"
+                android:paddingRight="20dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称" />
+
+                <TextView
+                    android:id="@+id/myinfo_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_container_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_container_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

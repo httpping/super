@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <com.vp.loveu.widget.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            vp:ratio="1"
+            vp:relative="width" >
+            <ImageView
+                android:id="@+id/discover_item_iv_icon1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:maxWidth="340dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/demo" />
+ </com.vp.loveu.widget.RatioLayout>
+        <TextView
+            android:id="@+id/discover_item_iv_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="科学解读" />
+    </LinearLayout>
+
+    <LinearLayout
+             android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+        <com.vp.loveu.widget.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            vp:ratio="1"
+            vp:relative="width" >
+            <ImageView
+                android:id="@+id/discover_item_iv_icon2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:maxWidth="340dp"
+                 />
+ </com.vp.loveu.widget.RatioLayout>
+        <TextView
+            android:id="@+id/discover_item_iv_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

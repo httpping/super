@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/user_and_more_selector_bg" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/white" >
+
+        <com.vp.loveu.widget.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/discover_user_icon_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/discover_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/discover_user_icon_left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="乌鸦救赎"
+            android:textColor="#262626"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <TextView
+            android:id="@+id/discover_user_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/discover_user_icon_left"
+            android:text="3分钟前"
+            android:textColor="#D8D8D8"
+            android:textSize="@dimen/sub_textView_size10" />
+
+        <TextView
+            android:id="@+id/discover_user_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="￥998.00"
+            android:textColor="@color/normal_bg_orange"
+            android:textSize="@dimen/sub_textView_size12" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

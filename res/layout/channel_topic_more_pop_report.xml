@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="@dimen/sub_textView_size16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/channel_topic_report_eroticism "
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="色情暴力"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/channel_topic_report_falsead"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="虚假广告"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/channel_topic_report_sensitiveinfo"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="敏感信息"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+        <TextView
+            android:id="@+id/channel_topic_report_rumor"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="不实谣言"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+        <TextView
+            android:id="@+id/channel_topic_report_other"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="其他不合法谣言"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/channel_topic_report_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+{"is_encrypt":1,"data":"{\"uid\":103,\"birthday\":\"1991-03-10\",\"edu\":5,\"income\":13,\"height\":158,\"weight\":55,\"child_status\":1,\"marital_status\":1,\"car_status\":1,\"house_status\":1,\"blood_type\":3,\"nation\":1,\"job\":1,\"home_area_code\":\"61\",\"signature\":\"啦咔咔\",\"constellations\":12,\"zodiak\":8}","msg":"成功","code":0}

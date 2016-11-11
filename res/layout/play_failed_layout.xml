@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/play_failed_iv_close"
+        android:layout_width="12dip"
+        android:layout_height="12dip"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/icon_delete" />
+
+    <TextView
+        android:id="@+id/play_failed_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/play_failed_ly_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动时间:  " />
+
+        <TextView
+            android:id="@+id/play_failed_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-02-13" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:layout_marginBottom="29dip"
+        android:layout_marginTop="29dip" >
+
+        <TextView
+            android:background="@drawable/circle_shape"
+            android:gravity="center"
+            android:id="@+id/play_failed_tv_flag"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="已失效"
+            android:textColor="#999999"
+            android:textSize="24sp" />
+    </FrameLayout>
+
+</LinearLayout>

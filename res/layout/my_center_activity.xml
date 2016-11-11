@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/bg_gray"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 顶部头像展示 -->
+
+            <include layout="@layout/my_center_show_user_info" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:background="#ffffff" >
+
+                <LinearLayout
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="26dip"
+                        android:layout_marginRight="38dip"
+                        android:background="#EEEEEE" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="收藏"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="26dip"
+                        android:layout_marginLeft="38dip"
+                        android:background="#EEEEEE" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/my_center_bt_editinfos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="修改资料"
+                    android:textColor="#222222"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_center_bt_flow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@id/center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="关注/粉丝"
+                    android:textColor="#222222"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 下部分功能导航 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="302dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <!-- 我的活动 -->
+
+                <LinearLayout
+                    android:id="@+id/my_center_my_active"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="#ffffff" >
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="50dip" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_active_logo" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/my_center_active_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dip"
+                            android:singleLine="true"
+                            android:text="我的活动  (3)"
+                            android:textColor="#222222"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 我的红娘推荐列表 -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#FFD8D8D8" />
+
+                <LinearLayout
+                    android:id="@+id/my_center_my_dll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="#ffffff" >
+
+                    <RelativeLayout
+                        android:layout_width="45dip"
+                        android:layout_height="50dip" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_dll_logo" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dip"
+                        android:singleLine="true"
+                        android:text="动态"
+                        android:textColor="#222222"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- 购物 -->
+
+                <LinearLayout
+                    android:id="@+id/my_center_my_palyer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="20dip"
+                    android:background="#ffffff" >
+
+                    <RelativeLayout
+                        android:layout_width="45dip"
+                        android:layout_height="50dip" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_play_logo" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dip"
+                            android:singleLine="true"
+                            android:text="我的支付"
+                            android:textColor="#222222"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 帐号设置 -->
+
+                <View
+                    android:id="@+id/my_center_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                     android:visibility="gone"
+                    android:background="#FFD8D8D8" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/my_center_my_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:background="#ffffff" >
+
+                    <RelativeLayout
+                        android:layout_width="45dip"
+                        android:layout_height="50dip" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_money_logo" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dip"
+                        android:singleLine="true"
+                        android:text="钱包"
+                        android:textColor="#222222"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/my_center_iv_back"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:padding="10dip"
+            android:src="@drawable/icon_back_whiter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/my_center_iv_share"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="10dip"
+                android:src="@drawable/my_btn_share" />
+
+            <ImageView
+                android:id="@+id/my_center_iv_setting"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="10dip"
+                android:src="@drawable/icon_setting" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中状态 -->
+    <item android:drawable="@drawable/icon_home_message" android:state_checked="true"/>
+
+    <!-- 按压状态 -->
+    <item android:drawable="@drawable/icon_home_message" android:state_pressed="true"/>
+
+    <!-- 其他 -->
+    <item android:drawable="@drawable/icon_home_message_normal"/>
+
+</selector>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:id="@+id/ll_public_top"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/public_title_height"
+    android:gravity="center_vertical" >
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </View>
+
+    <FrameLayout
+        android:id="@+id/left_back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/public_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:background="@drawable/icon_back"
+            android:textColor="@color/top_btn_text_color"
+            android:textSize="13dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/public_top_title"
+        style="@style/publicTopTitleStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="title"
+        android:textColor="@color/top_title_text_color"
+        android:textSize="@dimen/top_title_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/public_top_radio_play"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <com.vp.loveu.widget.CircleImageView
+            android:id="@+id/public_top_radio_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            vp:civ_border_color="@color/bg_gray"
+            vp:civ_border_width="1dp" />
+
+        <ImageView
+            android:id="@+id/public_top_radio_iv_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/chanel_radio_logo1" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/rigth_btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:id="@+id/public_top_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:textColor="@color/top_btn_text_color"
+            android:textSize="@dimen/top_btn_text_size" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#999999" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.vp.loveu.widget.CircleImageView
+        android:id="@+id/fell_help_bottom_item_iv_logo"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip" />
+
+    <LinearLayout
+        android:id="@+id/fell_help_bottom_top_flag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/fell_help_bottom_item_iv_logo"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/fell_help_bottom_item_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="aaa"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/fell_help_bottom_item_tv_name"
+                android:gravity="center_vertical"
+                android:text="提问 :"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/fell_help_bottom_item_packet"
+                android:layout_width="74dip"
+                android:layout_height="24dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/commit_shape"
+                android:text="1元红包"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fell_help_bottom_item_tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#222222"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/fell_help_bottom_item_iv_acontainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal"
+            android:paddingRight="10dip"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fell_help_botton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fell_help_bottom_top_flag"
+        android:layout_marginBottom="20dip"
+        android:paddingLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:paddingRight="15dip" >
+
+        <TextView
+            android:id="@+id/fell_help_bottom_tv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="导师回复 :"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/fell_help_bottom_bottom_flg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fell_help_bottom_item_iv_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/fell_help_botton"
+        android:background="@color/divide_line_bg" />
+
+</RelativeLayout>

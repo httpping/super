@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="basic_info_name">
+        <item>ID</item>
+        <item>出生日期</item>
+        <item>星座</item>
+        <item>生肖</item>
+        <item>学历</item>
+        <item>薪水</item>
+        <item>身高</item>
+        <item>体重</item>
+        <item>有无子女</item>
+        <item>婚姻状况</item>
+        <item>购车情况</item>
+        <item>购房情况</item>
+        <item>血型</item>
+        <item>民族</item>
+        <item>职业</item>
+        <item>籍贯</item>
+        <item>内心独白</item>
+    </string-array>
+    <string-array name="basic_info_name_json_key">
+        <item>uid</item>
+        <item>birthday</item>
+        <item>constellations</item>
+        <item>zodiak</item>
+        <item>edu</item>
+        <item>income</item>
+        <item>height</item>
+        <item>weight</item>
+        <item>child_status</item>
+        <item>marital_status</item>
+        <item>car_status</item>
+        <item>house_status</item>
+        <item>blood_type</item>
+        <item>nation</item>
+        <item>job</item>
+        <item>home_area_code</item>
+        <item>signature</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="House">
+        <item>租房</item>
+        <item>已购住房 </item>
+        <item>即将购买</item>
+        <item>随时可购买</item>
+    </string-array>
+    <string-array name="LivingCondition">
+        <item>暂未购房</item>
+        <item>需要时购置</item>
+        <item>已购住房</item>
+        <item>与人合租</item>
+        <item>独立租房</item>
+        <item>与父母同住</item>
+        <item>住亲朋家</item>
+        <item>住单位房</item>
+    </string-array>
+    <string-array name="Post">
+        <item>普通职员</item>
+        <item>中层管理</item>
+        <item>高层管理者</item>
+        <item>企业主</item>
+    </string-array>
+    <string-array name="HasCar">
+        <item>无车</item>
+        <item>已购车</item>
+    </string-array>
+    <string-array name="High">
+        <item>150-210-cm</item>
+    </string-array>
+    <string-array name="Weight">
+        <item>40-100-kg</item>
+    </string-array>
+    <string-array name="BloodType">
+        <item>A型</item>
+        <item>B型</item>
+        <item>AB型</item>
+        <item>O型</item>
+        <item>不清楚</item>
+    </string-array>
+    <string-array name="Constellation">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+    <string-array name="ZodiacSign">
+        <item>鼠</item>
+        <item>牛</item>
+        <item>虎</item>
+        <item>兔</item>
+        <item>龙</item>
+        <item>蛇</item>
+        <item>马</item>
+        <item>羊</item>
+        <item>猴</item>
+        <item>鸡</item>
+        <item>狗</item>
+        <item>猪</item>
+    </string-array>
+    <string-array name="Education_copy">
+        <item>高中</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>本科以上</item>
+    </string-array>
+    <string-array name="Education">
+        <item>高中</item>
+        <item>高中</item>
+        <item>高中</item>
+        <item>高中</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>本科</item>
+        <item>本科</item>
+        <item>本科以上</item>
+        <item>本科以上</item>
+        <!--
+        备份
+        <item>其他</item>
+        <item>小学</item>
+        <item>初中</item>
+        <item>高中</item>
+        <item>中专</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+        -->
+    </string-array>
+    <string-array name="Married">
+        <item>未婚</item>
+        <item>离异</item>
+        <item>丧偶</item>
+    </string-array>
+    <string-array name="Salary">
+        <item>3000元以下</item>
+        <item>3000-5000元</item>
+        <item>5000-8000元</item>
+        <item>8000-15000元</item>
+        <item>15000-25000元</item>
+        <item>25000以上</item>
+    </string-array>
+    <string-array name="Salary_index">
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="Job">
+        <item>计算机/互联网/通信</item>
+        <item>公务员/事业单位</item>
+        <item>医生</item>
+        <item>护士</item>
+        <item>空乘人员</item>
+        <item>生产/工艺/制造</item>
+        <item>商业/服务业/个体经营</item>
+        <item>金融/银行/投资/保险</item>
+        <item>文化/广告/传媒</item>
+        <item>娱乐/艺术/表演</item>
+        <item>法律/法务</item>
+        <item>教育/培训/管理咨询</item>
+        <item>建筑/房地产/物业</item>
+        <item>消费/零售/贸易/交通物流</item>
+        <item>酒店旅游</item>
+        <item>现代农业</item>
+        <item>在校学生</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="National_copy">
+        <item>汉族</item>
+        <item>少数民族</item>
+    </string-array>
+    <string-array name="National">
+        <item>汉族</item>
+        <item>壮族</item>
+        <item>满族</item>
+        <item>回族</item>
+        <item>苗族</item>
+        <item>维吾尔族</item>
+        <item>土家族</item>
+        <item>彝族</item>
+        <item>蒙古族</item>
+        <item>藏族</item>
+        <item>布依族</item>
+        <item>侗族</item>
+        <item>瑶族</item>
+        <item>朝鲜族</item>
+        <item>白族</item>
+        <item>哈尼族</item>
+        <item>哈萨克族</item>
+        <item>黎族</item>
+        <item>傣族</item>
+        <item>畲族</item>
+        <item>傈僳族</item>
+        <item>仡佬族</item>
+        <item>东乡族</item>
+        <item>高山族</item>
+        <item>拉祜族</item>
+        <item>水族</item>
+        <item>佤族</item>
+        <item>纳西族</item>
+        <item>羌族</item>
+        <item>土族</item>
+        <item>仫佬族</item>
+        <item>锡伯族</item>
+        <item>柯尔克孜族</item>
+        <item>达斡尔族</item>
+        <item>景颇族</item>
+        <item>毛南族</item>
+        <item>撒拉族</item>
+        <item>布朗族</item>
+        <item>塔吉克族</item>
+        <item>阿昌族</item>
+        <item>普米族</item>
+        <item>鄂温克族</item>
+        <item>怒族</item>
+        <item>京族</item>
+        <item>基诺族</item>
+        <item>德昂族</item>
+        <item>保安族</item>
+        <item>俄罗斯族</item>
+        <item>裕固族</item>
+        <item>乌兹别克族</item>
+        <item>门巴族</item>
+        <item>鄂伦春族</item>
+        <item>独龙族</item>
+        <item>塔塔尔族</item>
+        <item>赫哲族</item>
+        <item>珞巴族</item>
+    </string-array>
+    <string-array name="abtype">
+        <item>俩人约会</item>
+        <item>几人聚会</item>
+        <item>大中活动</item>
+        <item>一起旅行</item>
+        <item>生活拼搭</item>
+    </string-array>
+    <string-array name="array_time_filter">
+        <item>全部</item>
+        <item>今天</item>
+        <item>最近3天</item>
+        <item>最近7天</item>
+        <item>最近30天</item>
+    </string-array>
+    <string-array name="company_name">
+        <item>中兴</item>
+        <item>华为</item>
+        <item>富士康</item>
+        <item>康佳</item>
+        <item>腾讯</item>
+        <item>百度</item>
+        <item>网易</item>
+    </string-array>
+    <string-array name="yuanbao_charge">
+        <item>10缘宝</item>
+        <item>30缘宝</item>
+        <item>90缘宝</item>
+        <item>120缘宝</item>
+        <item>300缘宝</item>
+        <item>520缘宝</item>
+        <item>1080缘宝</item>
+        <item>5180缘宝</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="yuanbao_charge_money">
+        <item>3¥</item>
+        <item>9¥</item>
+        <item>27¥</item>
+        <item>36¥</item>
+        <item>90¥</item>
+        <item>156¥</item>
+        <item>312¥</item>
+        <item>1554¥</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="ChooseState">
+        <item>想找一个男朋友</item>
+        <item>想找一个女朋友</item>
+    </string-array>
+    <string-array name="Kid">
+        <item>无子女</item>
+        <item>有且在一起</item>
+        <item>有但没在一起</item>
+    </string-array>
+    <string-array name="Photo">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+    <string-array name="Child">
+        <item>未填</item>
+        <item>不要，不喜欢</item>
+        <item>婚后马上要</item>
+        <item>过几年再要</item>
+        <item>顺其自然</item>
+        <item>暂时不考虑</item>
+    </string-array>
+    <string-array name="Housework">
+        <item>全部TA做</item>
+        <item>全部我做</item>
+        <item>主要TA做，我偶尔帮忙</item>
+        <item>看情况，谁有时间谁做</item>
+    </string-array>
+    <string-array name="Relation">
+        <item>未填</item>
+        <item>彼此完全占有</item>
+        <item>亲密无间，不分你我</item>
+        <item>完全依赖</item>
+        <item>彼此关心但保持距离</item>
+        <item>有各自独立的空间</item>
+    </string-array>
+    <string-array name="Attitude">
+        <item>未填</item>
+        <item>不会同意离婚</item>
+        <item>希望有比较长久的关系</item>
+        <item>希望长久的婚姻</item>
+        <item>相信真正的爱情能永恒</item>
+        <item>不在于天长地久，只在乎曾经拥有</item>
+        <item>顺其自然，感情不能强求</item>
+    </string-array>
+    <string-array name="HouseClean">
+        <item>未填</item>
+        <item>不太在乎</item>
+        <item>不太乱就行</item>
+        <item>喜欢整洁</item>
+        <item>喜欢别人打扫干净</item>
+        <item>有洁癖</item>
+        <item>先弄乱再打扫</item>
+    </string-array>
+    <string-array name="Pet">
+        <item>未填</item>
+        <item>最好不要</item>
+        <item>喜欢鱼、鸟</item>
+        <item>喜欢狗</item>
+        <item>喜欢猫</item>
+        <item>只要是宠物都喜欢</item>
+        <item>你可以养，但别让我照顾</item>
+    </string-array>
+    <string-array name="CloseFriend">
+        <item>未填</item>
+        <item>婚后最好不要有了</item>
+        <item>你可以有，要让我知道</item>
+        <item>可以，只是被冷落我</item>
+        <item>各有各的，互不干涉</item>
+        <item>成为共同的朋友</item>
+    </string-array>
+    <string-array name="WithParent">
+        <item>未填</item>
+        <item>可以和自己的父母住</item>
+        <item>可以和对方的父母住</item>
+        <item>两口子自己住，经常回父母家看看</item>
+        <item>自己住，过年过节才回家</item>
+    </string-array>
+    <string-array name="FriendAfterMarry">
+        <item>未填</item>
+        <item>两人世界</item>
+        <item>三两好友</item>
+        <item>喜欢和大家庭在一起</item>
+        <item>很多朋友</item>
+        <item>保持婚前的生活</item>
+    </string-array>
+    <string-array name="NotifyMsgArray">
+        <item>@string/notify_item_active</item>
+        <item>@string/notify_item_friend</item>
+        <item>@string/notify_item_praised</item>
+        <item>@string/notify_item_comments</item>
+        <item>@string/notify_item_visitor</item>
+    </string-array>
+    <string-array name="NotifyMsgIcon">
+        <item>@drawable/image_notify_activity</item>
+        <item>@drawable/image_notify_friend</item>
+        <item>@drawable/image_notify_praised</item>
+        <item>@drawable/image_notify_comment</item>
+        <item>@drawable/image_notify_visitor</item>
+    </string-array>
+    <string-array name="RelationShip">
+        <item>闺蜜</item>
+        <item>基友</item>
+        <item>同事</item>
+        <item>亲戚</item>
+    </string-array>
+
+    <!-- add by ping -->
+    <string-array name="Report_array">
+        <item>其他不合法内容</item>
+        <item>色情暴力</item>
+        <item>虚假广告</item>
+        <item>敏感信息</item>
+        <item>不实谣言</item>
+        <!-- end -->
+    </string-array>
+
+</resources>

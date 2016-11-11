@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+<RelativeLayout 
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    
+    >
+      <EditText
+        android:id="@+id/bind_et_number"
+        style="@style/login_editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:hint="请输入手机号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:textColorHint="#D8D8D8"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="15sp" />  
+        
+     <LinearLayout
+         android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/bind_et_valid_code"
+            style="@style/login_editText_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入验证码"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColorHint="#D8D8D8"
+        android:textColor="@color/normal_textView_color"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bind_btn_getvalidcode"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/login_validcode_btn_bgcolor_selector"
+            android:enabled="false"
+            android:text="验证码"
+            android:textColor="@color/btn_enable_textcolor_selector"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+     <TextView 
+         android:visibility="gone"
+         android:id="@+id/bind_validcode_tv_timmer"
+         android:gravity="center"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginRight="29dp"
+         android:layout_marginBottom="45dp"
+         android:layout_width="95dp"
+         android:layout_height="31dp"
+         android:text="已发送(60s)"
+         android:textColor="#FFFFFF"
+         android:textSize="13sp"
+         android:background="#222222"
+         />
+</RelativeLayout>    
+
+    <Button
+        android:id="@+id/bind_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_login_btn_bgcolor_selector"
+        android:enabled="false"
+        android:text="绑定"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/big_btn_text_size" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/login_logo" />
+    </RelativeLayout>
+
+</LinearLayout>

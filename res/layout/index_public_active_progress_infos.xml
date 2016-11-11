@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    android:layout_height="wrap_content" >
+
+    <com.vp.loveu.widget.CircleImageView
+        android:id="@+id/index_active_infos_iv_icon"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        vp:civ_border_width="0dip"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/overlayer" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/index_active_infos_iv_icon" >
+
+        <TextView
+            android:id="@+id/index_active_infos_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="#262626"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip" >
+
+            <ImageView
+                android:layout_width="11dip"
+                android:layout_height="11dip"
+                android:src="@drawable/icon_index_time_logo" />
+
+            <TextView
+                android:id="@+id/index_active_infos_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:text="时间"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/index_active_infos_tv_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/index_active_infos_tv_name"
+            android:layout_marginTop="5dip"
+            android:text="已报名参加活动"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

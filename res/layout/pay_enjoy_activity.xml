@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3222222"
+    android:fitsSystemWindows="true"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_delete" />
+
+        <ImageView
+            android:id="@+id/enjoy_user_head_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher_logo" />
+
+        <TextView
+            android:id="@+id/enjoy_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enjoy_user_head_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="MoMo"
+            android:textColor="@color/top_title_text_color"
+            android:textSize="@dimen/textSize16" />
+
+        <TextView
+            android:id="@+id/remind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enjoy_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/enjoy_pay_sub_desc"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="@dimen/textSize12" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/remind_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp" >
+
+            <ToggleButton
+                android:id="@+id/first_price"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:checked="true"
+                android:textOn="2元"
+                android:textOff="2元" 
+                android:textSize="@dimen/textSize18"
+                android:textColor="@color/enjoy_pay_select_price_circle_textcolor"
+                android:background="@drawable/enjoy_pay_select_price_bg"
+                 />
+
+            <ToggleButton
+                android:id="@+id/second_price"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_toRightOf="@+id/first_price"
+                android:background="@drawable/enjoy_pay_select_price_bg"
+                android:textColor="@color/enjoy_pay_select_price_circle_textcolor"
+                android:textOff="10元"
+                android:textOn="10元"
+                android:textSize="@dimen/textSize18" />
+
+            <ToggleButton
+                android:id="@+id/three_price"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/second_price"
+                android:textOn="50元"
+                android:textOff="50元" 
+                android:textSize="@dimen/textSize18"
+                android:textColor="@color/enjoy_pay_select_price_circle_textcolor"
+                android:background="@drawable/enjoy_pay_select_price_bg"
+                 />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_enjoy_price"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/enjoy_pay_btn_bg"
+            android:ems="10"
+            android:hint="@string/enjoy_pay_price_hint"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/textSize14"
+            android:typeface="serif" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/wx_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_enjoy_price"
+            android:layout_marginTop="10dp"
+             android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/enjoy_pay_btn_bg" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pay_icon_weixin" />
+
+            <TextView
+                android:id="@+id/EditText01"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:gravity="left|center"
+                android:text="微信支付"
+                android:textColor="@color/top_title_text_color"
+                android:textSize="@dimen/sub_textView_size15" />
+
+            <ToggleButton
+                android:id="@+id/wx_pay_toggle"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/public_radio_selected_bg"
+                android:checked="true" 
+                 android:textOff=""
+                    android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alipay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_below="@+id/wx_pay"
+            android:background="@drawable/enjoy_pay_btn_bg" >
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pay_icon_zhifubao" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/ImageView02"
+                android:gravity="left|center"
+                android:text="支付宝支付"
+                android:textColor="@color/top_title_text_color"
+                android:textSize="@dimen/sub_textView_size15" />
+
+            <ToggleButton
+                android:id="@+id/alipay_toggle"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/public_radio_selected_bg"
+                android:checked="false" 
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/go_pay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_below="@+id/alipay"
+            android:background="@drawable/enjoy_pay_btn_go_bg"
+            android:text="@string/enjoy_pay_go_btn"
+            android:textColor="@color/white" 
+            android:textSize="@dimen/textSize18"
+            />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/go_pay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/enjoy_pay_go_btn_desc"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="@dimen/textSize12" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_below="@+id/TextView01"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>

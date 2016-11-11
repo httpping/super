@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="15dip" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="24dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/public_fell_help_tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的求助："
+            android:gravity="top"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/public_fell_help_bt_packet_flag"
+                android:layout_width="74dip"
+                android:layout_height="24dip"
+                android:layout_gravity="right"
+                android:background="@drawable/commit_shape"
+                android:text="1元红包"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/public_fell_help_logoname_container"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/overlayer" />
+
+        <TextView
+            android:layout_marginLeft="15dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="娜娜"
+            android:textColor="#262626"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/public_fell_help_tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:textColor="#222222"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/public_fell_help_ly_iv_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <!-- <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/public_fell_help_iv_one"
+                android:layout_width="103dip"
+                android:src="@drawable/a1"
+                 android:scaleType="centerCrop"
+                android:layout_height="63dip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/public_fell_help_iv_two"
+                android:layout_width="103dip"
+                android:src="@drawable/a2"
+                android:scaleType="centerCrop"
+                android:layout_height="63dip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1" >
+
+            <ImageView
+                 android:scaleType="centerCrop"
+                android:src="@drawable/a3"
+                android:id="@+id/public_fell_help_iv_three"
+                android:layout_width="103dip"
+                android:layout_height="63dip" />
+        </FrameLayout> -->
+    </LinearLayout>
+</LinearLayout>

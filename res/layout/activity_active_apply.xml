@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/ll_public_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <LinearLayout 
+            android:id="@+id/ll_back_apply"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back_apply"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back" />
+        
+        </LinearLayout>
+
+        <com.zngoo.pczylove.view.METextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/active_apply_title"
+            android:textColor="@color/lightpink1"
+            android:textSize="@dimen/text_size_one" />
+        
+    </RelativeLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_activie_apply"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" />
+
+</LinearLayout>

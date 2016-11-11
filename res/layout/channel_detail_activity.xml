@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/channel_iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#96000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:gravity="center_horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/channel_radio_iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:scaleType="center"
+                    android:src="@drawable/chanel_icon_back" />
+
+                <ImageView
+                    android:id="@+id/channel_radio_iv_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:scaleType="center"
+                    android:src="@drawable/channel_vadio_close" />
+            </RelativeLayout>
+
+            <com.vp.loveu.widget.CircleImageView
+                android:id="@+id/channel_detail_icon"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="325dp"
+                vp:civ_border_color="#64000000"
+                vp:civ_border_width="10dp" />
+
+            <TextView
+                android:id="@+id/channel_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="282dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sub_textView_size16" />
+
+            <TextView
+                android:id="@+id/channel_detail_tutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="260dp"
+                android:text="导师:xxx"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sub_textView_size12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="210dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/channel_detail_starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sub_textView_size12" />
+
+                <TextView
+                    android:id="@+id/channel_detail_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/sub_textView_size12" />
+
+                <SeekBar
+                    android:id="@+id/channel_detail_seekbar"
+                    style="@style/Widget.SeekBar.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/channel_detail_endtime"
+                    android:layout_toRightOf="@id/channel_detail_starttime"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="120dp" >
+
+               <!--  <ImageButton
+                    android:layout_marginLeft="38dip"
+                    android:id="@+id/channel_btn_share"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/channel_lovestation_share" /> -->
+                
+                <com.vp.loveu.channel.widget.ShareView
+                    android:layout_marginLeft="38dip"
+                    android:id="@+id/channel_btn_share"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ></com.vp.loveu.channel.widget.ShareView>
+
+                <ImageView
+                    android:id="@+id/channel_detail_play"
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                	 
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/channel_vadio_play" />
+
+                <ImageButton
+                    android:layout_marginRight="35dip"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/channel_btn_rewards"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.2"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/channel_lovestation_dashang"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <com.vp.loveu.widget.ZanAllHeadView
+                    android:id="@+id/channel_detail_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    vp:bg_color="@android:color/transparent"
+                    vp:is_showCutLine="false"
+                    vp:number_boder_size="0dp"
+                    vp:number_text_color="@color/white" >
+                </com.vp.loveu.widget.ZanAllHeadView>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

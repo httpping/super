@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/message_like_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bg_gray"
+        android:dividerHeight="1px" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/public_empty_view"
+        style="@style/PublicEmptyView"
+        android:text="还没有收到赞!" />
+
+</LinearLayout>

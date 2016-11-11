@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="240dip"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/intergral_iv_icon_progress"
+        android:layout_width="130dip"
+        android:layout_height="130dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_circle_progress" />
+
+    <TextView
+        android:id="@+id/intergral_tv_intergral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/green_public"
+        android:textSize="47sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intergral_iv_icon_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排名:"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/intergral_tv_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级:"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/intergral_tv_alias"
+                android:layout_width="42dip"
+                android:layout_height="16dip"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/my_intergral_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:paddingTop="1dip"
+                android:text="导师"
+                android:textColor="#222222"
+                android:textSize="10sp" />
+            <!-- <TextView
+                android:id="@+id/intergral_tv_alias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/my_center_daoshi_background"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="16sp" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tabNames">
+        <item>首页</item>
+        <item>发现</item>
+        <item>动态</item>
+        <item>消息</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="homeTabs">
+        <item>动态</item>
+        <item>活动</item>
+    </string-array>
+    <string-array name="msgTabs">
+        <item>私聊</item>
+        <item>通知</item>
+    </string-array>
+
+    <string name="app_name">爱U</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="age">年龄</string>
+    <string name="height">身高</string>
+    <string name="updatepass">修改密码</string>
+    <string name="forgetpass">忘记密码</string>
+    <string name="save">保存</string>
+    <string name="register">注册账号</string>
+    <string name="bind_tel_no">手机绑定 (1/3)</string>
+    <string name="modify_tel_no">修改手机号</string>
+    <string name="userinfo1">创建资料 (2/3)</string>
+    <string name="userinfo2">创建资料 (3/3)</string>
+    <string name="show_image">发表动态</string>
+    <string name="show_text">分享心情</string>
+    <string name="psychtest">心理测试</string>
+    <string name="qa_hab">习惯测试</string>
+    <string name="qa_cha">性格测试</string>
+    <string name="qa_int">访谈问答</string>
+    <string name="qa_result">测试结果</string>
+    <string name="inter_result">访谈结果</string>
+    <string name="type">类型：</string>
+    <string name="select_ab">筛选活动</string>
+    <string name="dynamicas_ab">动态</string>
+    <string name="add_ab">发起活动</string>
+    <string name="ab_info">活动详情</string>
+    <string name="ab_people">报名列表</string>
+    <string name="set">设置</string>
+    <string name="love">喜欢</string>
+    <string name="cha">个性配</string>
+    <string name="hab">习惯配</string>
+    <string name="eye">有眼缘</string>
+    <string name="search">寻人</string>
+    <string name="workunit">单位验证</string>
+    <string name="exchange_image">更换照片</string>
+    <string name="pull_to_refresh_footer_label">松开加载更多...</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中...</string>
+    <string name="self_word">内心独白:一句座右铭、一段歌词或者一段内心记叙（限20-200字以内）</string>
+    <string name="hello">下拉可刷新 </string>
+    <string name="refresh_down_text">下拉可刷新</string>
+    <string name="refresh_release_text">松开可刷新</string>
+    <string name="toast_text">ScrollView下拉刷新完毕</string>
+    <string name="tv_activity_create">创&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;建</string>
+    <string name="tv_activity_query">查&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;询</string>
+    <string name="tv_info">消息</string>
+    <string name="tv_qq">QQ</string>
+    <string name="tv_wx">微信</string>
+    <string name="tv_wb">微博</string>
+    <string name="change_image">修改头像</string>
+    <string name="next">下一步</string>
+    <string name="previous">上一步</string>
+    <string name="finish">完成</string>
+    <string name="dating_status_one">想找一个男朋友</string>
+    <string name="dating_status_two">想找一个女朋友</string>
+
+    <!-- 活动 -->
+    <string name="tv_active">活动</string>
+    <string name="tv_active_personal">个人活动</string>
+    <string name="tv_active_company">单位活动</string>
+    <string name="tv_active_love">虚拟约会</string>
+    <string name="item_active_title">活动主题：</string>
+    <string name="item_active_time">活动时间：</string>
+    <string name="item_active_place">活动地点：</string>
+    <string name="item_invite_num">邀请人数：</string>
+    <string name="activie_registered">取消报名</string>
+    <string name="activie_renshuyiman">人数已满</string>
+    <string name="activie_end">活动报名结束</string>
+    <string name="active_invalid">活动已经结束</string>
+    <string name="item_details">查看详情</string>
+    <string name="activie_register">已报名</string>
+    <string name="activie_release">发布</string>
+    <string name="active_details_title">活动详情</string>
+    <string name="tx_active_details_a">鹏城之约志愿者招募</string>
+    <string name="tx_active_details_1">加入我们的红娘队伍，</string>
+    <string name="tx_active_details_2">做一份天底下最美的事业，</string>
+    <string name="tx_active_details_3">成就更多的幸福</string>
+    <string name="tv_active_num">活动人数：</string>
+    <string name="tv_active_funds">活动经费：</string>
+    <string name="tv_active_introduction">活动简介</string>
+    <string name="tv_active_funds1">费用：</string>
+    <string name="tv_registration_time_start">离报名截至时间还有：</string>
+    <string name="tv_web_registration">网络已报名：</string>
+    <string name="tv_companty_registartion">单位报名：</string>
+    <string name="activie_registered1">已报名的人</string>
+    <string name="tv_registered">报名</string>
+    <string name="active_apply_title">我的活动</string>
+    <string name="hint_registered_phone">请输入手机号码</string>
+    <string name="hint_registered_org_name">请输入公司或单位名称</string>
+    <string name="hint_registered_register_name">请输入姓名</string>
+    <string name="hint_registered_erificationcode">验证码</string>
+    <string name="tv_registered_erificationcode">获取手机验证码</string>
+    <string name="public_str_search_promocode">请正确填写优惠码</string>
+    <string name="asdf">报名成功</string>
+    <string name="tv_male">男：</string>
+    <string name="tv_female">女：</string>
+
+    <!-- 发布 -->
+    <string name="tv_message">心情</string>
+    <string name="tv_picture">图片</string>
+    <string name="tv_couplemake">媒婆</string>
+
+    <!-- 发现 -->
+    <string name="tv_dynamic">动态</string>
+    <string name="tv_married">婚恋指导</string>
+    <string name="tv_psychic">心里测试</string>
+    <string name="tv_lovebook">约会宝典</string>
+    <string name="tv_loveword">甜言蜜语</string>
+    <string name="tv_lovestory">爱情故事</string>
+
+    <!-- 首界面 -->
+    <string name="tv_rec">首页</string>
+    <string name="tv_ab">发现</string>
+    <string name="tv_ta">动态</string>
+    <string name="tv_msg">消息</string>
+    <string name="tv_user">我的</string>
+
+    <!-- 交友 -->
+    <string name="tv_search">搜索</string>
+    <string name="tv_surround">附近的人</string>
+    <string name="tv_friend">好友</string>
+    <string name="search_friend">搜索页</string>
+    <string name="commend_today">今日推荐</string>
+    <string name="tv_attent1">关注我的</string>
+    <string name="tv_atten2">我关注的</string>
+
+    <!-- 好友动态 -->
+    <string name="tv_comment_string">发布</string>
+    <string name="tv_getfriensdynamics_visitor_today">今日访客</string>
+    <string name="tv_getfriensdynamics_browse">总浏览量</string>
+    <string name="tpl_sign_user_info">用户信息</string>
+    <string name="tpl_sign_up">注册</string>
+    <string name="tpl_key_user_icon">头像</string>
+    <string name="tpl_key_user_name">昵称</string>
+    <string name="tpl_key_user_gender">性别</string>
+    <string name="tpl_key_user_note">备注</string>
+    <string name="tpl_value_user_note">请填写备注信息</string>
+    <string name="tpl_girl">女</string>
+    <string name="tpl_boy">男</string>
+    <string name="signup_success">注册成功</string>
+    <string name="signup_failed">注册失败</string>
+    <string name="tpl_camera">拍照</string>
+    <string name="tpl_picture">从相册获取</string>
+    <string name="tpl_change_user_name_title">更改名字</string>
+    <string name="tpl_input_user_name_hint">好名字可以让你的朋友更容易记住你</string>
+    <string name="tpl_change_user_note_title">更改备注</string>
+    <string name="tpl_input_user_note_hint">自定义备注信息，给你带来更多吸引</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="about_us">关于我们</string>
+    <string name="tv_tel">客服电话</string>
+    <string name="tv_tel_num">0755-83140829</string>
+    <string name="tv_weixin">微信公众号</string>
+    <string name="tv_weixin_num">pczylove</string>
+    <string name="tv_qq_kefu">客服QQ</string>
+    <string name="tv_qq_num">207531728</string>
+    <string name="tv_email">客服邮箱</string>
+    <string name="tv_email_num">kefu@pczylove.com</string>
+    <string name="tv_copyright">深圳市鹏城之约科技有限公司版权所有</string>
+    <string name="tv_checkupdate">检测更新</string>
+    <string name="tv_version">版本号：V</string>
+    <string name="find_remind">发现新版本 ,是否更新？</string>
+    <string name="not_found_remind">已是最新版本：V</string>
+    <string name="btn_update">立即更新</string>
+    <string name="btn_back">下次再说</string>
+    <string name="notifition_down_success">下载成功！</string>
+    <string name="notifition_down_fail">下载失败！</string>
+    <string name="downing">正在下载。。。</string>
+    <string name="down_success_remind">下载完成！点击安装。</string>
+    <!-- txtHint -->
+    <string name="empty_chat_hint">没有聊天消息</string>
+    <string name="fee_rule">\t1.最终报名成功以完成交费为准，如交费前招募人数已满将关闭支付，请您尽快完成支付；\n  \t2.您交费后将自动占用一个名额，无特殊情况概不接受退款请求，还望谅解。（可退款的特殊情况会在活动发布时提前说明）；\n  \t3.入场时需提供您的验证码和手机号码作为入场凭证去签到。</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="account_binding">帐号绑定</string>
+    <string name="account_binding_phone">手机号</string>
+    <string name="account_binding_phone1">已绑定</string>
+    <string name="account_binding_qq">QQ帐号</string>
+    <string name="account_binding_sina">微博帐号</string>
+    <string name="account_binding_weixin">微信帐号</string>
+    <string name="sign_out">退出登录</string>
+    <string name="sign_in">登录</string>
+
+    <!-- MyFragment -->
+    <string name="text_toattention">我关注的\n%1$s</string>
+    <string name="text_beattention">关注我的\n%1$s</string>
+    <string name="tv_getfriensdynamics_visitor_today1">今日访客：</string>
+    <string name="tv_getfriensdynamics_visitor_toal1">访客总量:</string>
+    <string name="tv_authentication">单位认证专区</string>
+    <string name="tv_authentication_no">未认证</string>
+    <string name="tv_authentication_yes">已认证</string>
+    <string name="tv_certification">单位认证</string>
+    <string name="btn_certification">认证</string>
+    <string name="btn_remove">解除</string>
+    <string name="et_phone">请输入手机号</string>
+    <string name="et_unit">请选择单位</string>
+    <string name="tv_certification_remind">1.单位认证专区只对和鹏城之约科技有限公司有合作的单位机构做认证，最大程度的确保单位认证用户资料的真实可靠；\n2.用户选择“解除”后将不在单位专区内展示</string>
+    <string name="tv_myactivite">我的活动（%1$s）</string>
+    <string name="tv_shoppong">购物</string>
+    <string name="tv_accountsetup">帐号设置</string>
+    <string name="tv_feedback">意见反馈</string>
+    <string name="tv_individualcenter_title">个人中心</string>
+    <string name="tv_commit">提交</string>
+    <string name="hint">谢谢您宝贵的建议</string>
+    <string name="tv_hinit">200字以内</string>
+    <!-- 2.0消息界面相关 -->
+    <string name="tv_frag_personal_msg">私聊</string>
+    <string name="tv_frag_notify_msg">通知</string>
+    <string name="notify_item_active">官方活动</string>
+    <string name="notify_item_friend">新朋友</string>
+    <string name="notify_item_praised">赞</string>
+    <string name="notify_item_comments">新评论</string>
+    <string name="notify_item_visitor">最近访客</string>
+    <string name="get_net_data_fail">获取数据失败</string>
+    <string name="get_net_data_empty">没有更多数据</string>
+    <string name="share_person_con">"%s"在鹏城之约找自己的另一半，快来TA的个人主页看看吧</string>
+    <string name="share_person_title">"%s"的个人主页</string>
+    <!-- 红娘相关 -->
+    <string name="recomended_information">被推荐人的信息</string>
+    <string name="recomended_str">推荐</string>
+    <string name="recomended_releaship">TA是你的</string>
+    <string name="recomended_gender">TA的性别</string>
+    <string name="recomended_birthday">TA的生日</string>
+    <string name="recomended_height">TA的身高</string>
+    <string name="recomended_address">TA的所在地</string>
+    <string name="recomended_releaship_hint">闺蜜/好友</string>
+    <string name="recomended_birthday_hint">1989-09-09</string>
+    <string name="recomended_height_hint">178cm</string>
+    <string name="recomended_address_hint">广东-深圳-福田</string>
+    <string name="recomended_personal_str">被推荐人：</string>
+    <string name="recomend_tips_str">推荐语：</string>
+    <string name="recomend_tips_content">推荐了自己的</string>
+
+    <!-- 二维码扫描 -->
+    <string name="txt_qr_scan">扫一扫</string>
+    <string name="txt_dimensional_code">请将二维码置于框内</string>
+    <string name="txt_input_code">输入消费码</string>
+    <string name="txt_open_link">确定打开链接？</string>
+
+    <!-- 多图片选择 -->
+    <string name="folder_all">所有照片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="mode_single">Single-Choice</string>
+    <string name="mode_multi">Multi-Choice</string>
+    <string name="max_select_amount">Max Selected Amount</string>
+    <string name="hint_default_amount">default amount is 9</string>
+    <string name="enable_camera">Enable Camera</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="go_select">Select</string>
+
+    <!-- 高德地图 -->
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="map_screenshot">地图截屏</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="pay_success_remind">活动将凭手机号码和订单信息进入，请在活动开始时展示报名 支付信息页面！ </string>
+    <string name="title_activity_push_notice_list">爱U官方通知</string>
+    <string name="title_activity_person_setting">更多</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_clear">清除</string>
+    <string name="txt_sure">确定</string>
+    <string name="dialog_title">标题</string>
+    <string name="dialgo_delete_title">确认删除吗?</string>
+    <string name="dialgo_delete_title_clear">是否要清除搜索记录?</string>
+    <string name="dialgo_delete_title_format">确认删除该%1$s吗?</string>
+    <string name="dialog_citychange">是否切换到当前城市?</string>
+    <string name="dialog_cancle_attend">确定取消关注该用户?</string>
+    <string name="dialog_shield">确定屏蔽该用户\n屏蔽后将不能看到该用户的show</string>
+    <string name="dialog_cancle_shield">确定取消屏蔽该用户</string>
+
+    <!-- 网络连接失败的提示 -->
+    <string name="network_error">网络连接失败</string>
+    <string name="not_more_data">没有更多数据了</string>
+    <string name="file_upload_faild">图片上传失败</string>
+    <string name="title_activity_in_ward_action">InWardActionActivity</string>
+    <string name="title_activity_confict_login">ConfictLoginActivity</string>
+    <string name="mtm_accept_cert">是否接受未知的证书?</string>
+    <string name="mtm_trust_anchor">服务器证书没有被签名</string>
+    <string name="mtm_cert_expired">The server certificate is expired.</string>
+    <string name="mtm_accept_servername">是否接受不匹配的服务器名</string>
+    <string name="mtm_hostname_mismatch">服务器不能给\"%s\"授权. 证书只对:有效</string>
+    <string name="mtm_connect_anyway">Do you want to connect anyway?</string>
+    <string name="mtm_cert_details">证书详情</string>
+    <string name="mtm_decision_always">总是</string>
+    <string name="mtm_decision_once">一次</string>
+    <string name="mtm_decision_abort">放弃</string>
+    <string name="mtm_notification">证书验证</string>
+    <string name="title_activity_enjoy_pay">EnjoyPayActivity</string>
+
+    <!-- 打赏 -->
+    <string name="enjoy_pay_sub_desc">谢谢打赏！欢迎继续关注他以后更新内容</string>
+    <string name="enjoy_pay_go_btn">支付打赏</string>
+    <string name="enjoy_pay_go_btn_desc">打赏无悔，概不退款</string>
+    <string name="enjoy_pay_price_hint">输入任意金额</string>
+    <string name="audio_state_0">按住 说话</string>
+    <string name="audio_state_1">正在 录音</string>
+    <string name="audio_state_2">立即 取消</string>
+
+    <!-- 优惠码 -->
+    <string name="title_activity_my_coupon">优惠码</string>
+    <string name="title_activity_select_course">选择课程</string>
+    <string name="title_activity_add_coupon_code">添加优惠码</string>
+        <string name="title_activity_modify_coupon_code">修改优惠码</string>
+    
+    <string name="desc_remind_please_add_price_hint">请输入修改后的价格</string>
+    <string name="desc_remind_please_coupon_code_hint">请输入优惠码</string>
+    <string name="desc_modify_price_hint">修改价格：</string>
+    <string name="desc_course_begin_time_hint">开始时间：</string>
+     <string name="desc_course_end_time_hint">结束时间：</string>
+   <string name="desc_course_time_hint">未选择</string>
+    <string name="desc_course_coupon_code_hint">未填写</string>
+     <string name="desc_course_coupon_code">优惠码：</string>
+    <string name="desc_course_coupon_code_submit">提交</string>
+     
+   
+    
+    
+    
+</resources>

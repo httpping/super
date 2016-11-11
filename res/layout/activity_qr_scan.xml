@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/capture_crop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:background="@drawable/qr_scan_bg_green"
+        android:padding="0dp"
+        android:contentDescription="@null" >
+
+        <View
+            android:id="@+id/capture_scan_line"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/qr_scan_bg_green_line_2"
+             />
+
+    </RelativeLayout>
+
+    
+
+<!--     <Button -->
+<!--         android:id="@+id/scan_close_btn" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_below="@id/scan_text" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:layout_marginTop="20dip" -->
+<!--          android:background="@drawable/bg_pop_btn" -->
+<!--         android:layout_marginBottom="20dip" -->
+<!--         android:textSize="@dimen/text_size_17" -->
+<!--         android:text="关闭" /> -->
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        android:clickable="true" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/capture_crop_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/public_title_view"
+        android:background="@color/qrscan_bg_trans"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/capture_crop_layout"
+        android:background="@color/qrscan_bg_trans" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:background="@color/qrscan_bg_trans" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/capture_crop_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/capture_crop_layout"
+        android:layout_toLeftOf="@+id/textView3"
+       android:background="@color/qrscan_bg_trans"  />
+    
+    <TextView
+        android:id="@+id/scan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capture_crop_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_dimensional_code"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

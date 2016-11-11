@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/user_and_more_selector_bg">
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_portrait" />
+
+        <TextView
+            android:id="@+id/nice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/head_image"
+            android:layout_marginTop="15dp"
+            android:textColor="#333333"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16dp"
+            android:text="Aaron" />
+
+        <TextView
+            android:id="@+id/unread_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chat_info"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/message_red_point_bg"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/chat_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nice_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:text="你来的时候给我带点水果"
+            android:textColor="#666666"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="12dp" />
+
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="1px"
+	    android:background="@color/divide_line_bg" />
+
+    </RelativeLayout>

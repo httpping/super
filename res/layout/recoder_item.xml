@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/free_help_bottom_recoder_container"
+    android:layout_width="wrap_content"
+    android:layout_height="27dip"
+    android:layout_marginBottom="5dip"
+    android:layout_marginTop="5dip" >
+
+    <ImageView
+        android:id="@+id/free_help_bottom_item_iv_recoder"
+        android:layout_width="74dip"
+        android:layout_height="27dip"
+        android:src="@drawable/icon_voice_logo" />
+
+    <TextView
+        android:id="@+id/free_help_bottom_item_tv_recoder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:text="60&apos;&apos;"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/free_help_bottom_item_iv_playering"
+        android:layout_centerVertical="true"
+        android:layout_width="7dip"
+        android:layout_height="7dip"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/free_help_bottom_item_iv_recoder"
+        android:background="@drawable/red_circle_shape">
+    </ImageView>
+
+</RelativeLayout>

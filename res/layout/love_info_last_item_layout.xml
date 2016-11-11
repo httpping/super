@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingTop="3dip"
+    android:paddingBottom="3dip"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/loveinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/loveinfo_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

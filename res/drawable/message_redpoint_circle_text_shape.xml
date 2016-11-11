@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="oval">
+    
+    <corners android:radius="9dp"/>
+    
+
+    
+        <!-- 颜色 -->
+    <solid android:color="#FF7A00" />
+    
+    
+   <!--  <stroke android:width="@dimen/portrait_view_stroke"
+        android:color="@color/portrait_view_border"/> -->
+
+</shape>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/user_and_more_selector_bg">
+ <ImageView 
+     android:id="@+id/channel_chat_icon_left"
+     android:layout_width="23dp"
+     android:layout_height="23dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="13dp"
+     android:src="@drawable/channel_wechat"
+     />
+
+   
+   <TextView 
+           android:layout_toRightOf="@id/channel_chat_icon_left"
+           android:layout_marginLeft="20dp"
+          android:layout_marginTop="13dp"
+           android:id="@+id/channel_topic_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ellipsize="end"
+           android:singleLine="true"
+           android:textColor="@color/normal_textView_color"
+           android:textSize="@dimen/sub_textView_size15"
+           android:text="大家都在聊"
+       />
+   
+     <TextView 
+		        android:id="@+id/channel_topic_listener"
+		        android:layout_toRightOf="@id/channel_chat_icon_left"
+		        android:layout_marginLeft="20dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="23人参与"
+		        android:textColor="@color/sub_textView_color99"
+		        android:textSize="@dimen/sub_textView_size10"
+		       android:layout_alignParentBottom="true"
+               android:layout_marginBottom="10dp"
+		        />
+
+    	
+    	<View 
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:background="@color/divide_line_bg"
+    android:layout_height="1px"
+    android:layout_marginBottom="1px" >
+</View>
+</RelativeLayout>
+</FrameLayout>

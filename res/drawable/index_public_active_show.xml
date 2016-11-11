@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#33333300"
+    android:layout_height="50dip" >
+
+    <com.vpclub.baidumapdemo.view.VerticalProgressBar
+        android:id="@+id/index_active_progress"
+        style="@style/verticlprogressbar_style"
+        android:layout_width="5dip"
+        android:layout_height="50dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/index_active_progress"
+        android:text="20%"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="万圣节单身party"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:singleLine="true"
+            android:text="活动时间 2015-10-21"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dip"
+        android:layout_height="wrap_content"
+        android:text=">>" />
+
+</RelativeLayout>

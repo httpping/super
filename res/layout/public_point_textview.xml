@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+     >
+    <TextView 
+        android:id="@+id/public_point_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="16sp"
+        />
+    <TextView 
+        android:id="@+id/public_point_tv_point"
+        android:layout_toRightOf="@id/public_point_tv_title"
+        android:layout_marginLeft="1dp"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/comment_like_dot_shape"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

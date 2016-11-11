@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 切换的 上部分 -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/coupon_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_gray"
+        android:divider="@color/bg_gray"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/buttom_line_divide_bg"/>
+    <ImageButton
+        android:id="@+id/btn_add_coupon"
+        android:layout_width="match_parent"
+         android:layout_height="49dp"
+        android:background="@color/white"
+        android:src="@drawable/my_promotion_code_ad" />
+
+</LinearLayout>

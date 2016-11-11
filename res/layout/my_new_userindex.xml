@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+
+    <com.ecloud.pultozoomview.PullToZoomScrollViewEx
+        android:id="@+id/my_new_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+    </com.ecloud.pultozoomview.PullToZoomScrollViewEx>
+    
+     <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/my_center_iv_back"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:padding="10dip"
+            android:src="@drawable/icon_back_whiter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/my_center_iv_share"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="10dip"
+                android:src="@drawable/my_btn_share" />
+
+            <ImageView
+                android:id="@+id/my_center_iv_setting"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:padding="10dip"
+                android:src="@drawable/icon_setting" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

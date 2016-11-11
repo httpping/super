@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/channel_topic_more_attention"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="+ 关注"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/channel_topic_more_chat"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="私聊"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <TextView
+            android:id="@+id/channel_topic_more_report"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divide_line_bg" />
+
+        <TextView
+            android:id="@+id/channel_topic_more_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/user_and_more_selector_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+    </LinearLayout>
+
+</RelativeLayout>

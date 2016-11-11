@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dip"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dip" 
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/wallet_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="情感求助红包"
+            android:layout_marginRight="40dip"
+            android:textColor="#222222"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/wallet_item_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="2015-11-02 12:32"
+            android:textColor="#D8D8D8"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wallet_item_tv_intergral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dip"
+        android:text="+12"
+        android:textColor="#10BB7D"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginRight="15dip"
+        android:id="@+id/wallet_item_iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_more" />
+
+    <View
+        android:id="@+id/wallet_item_iv_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#D8D8D8" />
+
+</RelativeLayout>

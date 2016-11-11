@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/index_navigation_iv_one"
+        android:layout_width="33dip"
+        android:layout_height="33dip"
+        android:src="@drawable/icon_index_nagivation_one" />
+
+    <TextView
+        android:id="@+id/index_navigation_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="附近的人"
+        android:textColor="#222222"
+        android:textSize="12sp" />
+
+</LinearLayout>

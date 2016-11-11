@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="176dip"
+        android:background="#ffffff" >
+
+        <FrameLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="130dip"
+            android:layout_height="130dip" >
+
+            <ImageView
+                android:id="@+id/wallet_iv_progress"
+                android:layout_width="130dip"
+                android:layout_height="130dip"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_circle_progress" />
+
+            <TextView
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:fitsSystemWindows="true"
+                android:layout_gravity="center"
+                android:id="@+id/wallet_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#10BB7D"
+                android:text="0.0元"
+                android:textSize="32dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="20dip"
+        android:text="余额明细"
+        android:textColor="@color/divide_text_color" />
+
+</LinearLayout>

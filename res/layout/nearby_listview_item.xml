@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_and_more_selector_bg"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip" >
+
+    <com.vp.loveu.widget.CircleImageView
+        android:id="@+id/nearby_item_iv_icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/overlayer" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/nearby_item_iv_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nearby_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anina"
+            android:textColor="#333333"
+            android:textSize="16dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/nearby_item_tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/man" />
+
+            <TextView
+                android:id="@+id/nearby_item_tv_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dip"
+                android:singleLine="true"
+                android:text="交友宣言"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/nearby_item_iv_flag"
+            android:layout_width="8dip"
+            android:layout_height="10dip"
+            android:src="@drawable/icon_location_near" />
+
+        <TextView
+            android:id="@+id/nearby_item_tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:text="0.10KM"
+            android:textColor="#999999"
+            android:textSize="12sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/nearby_item_ib_follow"
+            android:layout_width="60dip"
+            android:layout_height="24dip"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:background="@drawable/icon_follow" />
+    </LinearLayout>
+
+</RelativeLayout>

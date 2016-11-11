@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/reply_bt_record_yellow_shape" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/reply_bt_record_yellow_shape" android:state_selected="true"></item>
+    <item android:drawable="@drawable/reply_bt_record_yellow_shape" android:state_checked="true"></item>
+    <item android:drawable="@drawable/reply_bt_record_green_shape"></item>
+
+</selector>

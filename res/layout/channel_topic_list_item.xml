@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="17dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.vp.loveu.widget.CircleImageView
+            android:id="@+id/channel_topic_iv_portrait"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/overlayer" />
+
+        <TextView
+            android:id="@+id/channel_topic_tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/channel_topic_iv_portrait"
+            android:text="MOMO"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <TextView
+            android:id="@+id/channel_topic_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/channel_topic_iv_portrait"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/channel_topic_tv_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="100楼"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="@dimen/sub_textView_size10" />
+
+        <TextView
+            android:id="@+id/channel_topic_tv_viewnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/channel_topic_tv_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+
+    <com.vp.loveu.index.widget.RecoderFrameLayout
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+    </com.vp.loveu.index.widget.RecoderFrameLayout>
+
+    <com.vp.loveu.channel.widget.TopicPicContainer
+        android:id="@+id/channel_topic_pic_ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <!-- 存放音频的容器 -->
+
+    <LinearLayout
+        android:id="@+id/audio_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/channel_topic_operation_container"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/channel_topic_iv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/channel_topic_collect" />
+
+        <FrameLayout
+            android:id="@+id/channel_topic_iv_comm_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/channel_topic_iv_collect" >
+
+            <ImageView
+                android:id="@+id/channel_topic_iv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/channel_topic_comment" />
+
+            <ImageView
+                android:id="@+id/channel_topic_iv_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/channel_topic_del"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/channel_topic_iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/channel_topic_iv_comm_del"
+            android:src="@drawable/channel_topic_like" />
+        <!-- 点赞加1 -->
+
+        <TextView
+            android:id="@+id/channel_tv_like_addone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/channel_topic_iv_comm_del"
+            android:gravity="center"
+            android:text="+1"
+            android:textColor="#66ff0000"
+            android:textSize="18dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/channel_topic_tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/channel_topic_iv_like"
+            android:gravity="center"
+            android:text="(0)"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/channel_topic_iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/channel_topic_more" />
+    </RelativeLayout>
+
+</LinearLayout>

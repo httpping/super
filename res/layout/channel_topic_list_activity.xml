@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/channel_topic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="44dp"
+        android:divider="#00000000"
+        android:dividerHeight="20dp" ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/public_empty_view"
+        style="@style/PublicEmptyView"
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="44dp"
+        android:text="暂无跟帖" />
+
+
+    <RelativeLayout
+        android:id="@+id/channel_topic_operator_contrainer"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divide_line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/channel_topic_default_pic_containter"
+            android:layout_width="26dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/channel_topic_default_pic"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/channel_topic_default_pic" />
+
+            <com.vp.loveu.widget.CircleImageView
+                android:id="@+id/channel_topic_iv_selected"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a1"
+                android:visibility="gone"
+                vp:civ_border_color="@color/divide_line_bg"
+                vp:civ_border_width="1dip" />
+
+            <TextView
+                android:id="@+id/channel_topic_tv_selected_count"
+                android:layout_width="11dip"
+                android:layout_height="11dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_text_style"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="7sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/audio_iv"
+            android:layout_width="26dip"
+            android:layout_height="26dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/channel_topic_default_pic_containter"
+            android:src="@drawable/allchat_voice" />
+
+        <TextView
+            android:id="@+id/channel_topic_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingRight="10dip"
+            android:text="发送"
+            android:textColor="@color/channel_topic_send_selector"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/channel_topic_et_desc"
+            style="@style/chaneltopic_editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/channel_topic_btn_send"
+            android:layout_toRightOf="@id/audio_iv"
+            android:hint="说些什么..."
+            android:textColor="@color/normal_editText_color"
+            android:textColorHint="#CCCCCC"
+            android:textSize="14sp"
+            />
+
+        <com.vp.loveu.channel.widget.AudioButton
+            android:id="@+id/audio_btn"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@id/channel_topic_btn_send"
+            android:layout_toRightOf="@id/audio_iv"
+            android:background="@drawable/audio_button"
+            android:clickable="false"
+            android:gravity="center"
+             android:visibility="gone"
+            android:textSize="12sp" >
+        </com.vp.loveu.channel.widget.AudioButton>
+    </RelativeLayout>
+
+    <!-- dialog提示框 -->
+
+    <LinearLayout
+        android:id="@+id/dialog"
+        android:layout_width="130dip"
+        android:layout_height="130dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/recoder_dialog_background_shape"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+       >
+
+        <ImageView
+            android:id="@+id/dialog_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/volume1" />
+
+        <TextView
+            android:padding="2dip"
+            android:id="@+id/dialog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:text="手指上滑,取消发送" />
+    </LinearLayout>
+
+</RelativeLayout>

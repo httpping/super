@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="fill_parent"
+    android:layout_height="255dip" >
+
+    <!-- 这里实现背景图像模糊化 -->
+
+    <ImageView
+        android:id="@+id/user_index_big_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" 
+       />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#90000000" /> 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="255dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="100dip"
+            android:layout_height="90dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dip" >
+
+            <com.vp.loveu.widget.CircleImageView
+                android:id="@+id/user_index_iv_icon"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_centerInParent="true"
+                vp:civ_border_color="#a0ffffff"
+                vp:civ_border_width="2dip" />
+
+            <TextView
+                android:id="@+id/user_index_tv_grade"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/circle_text_style"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_index_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+               android:layout_marginRight="8dip"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_index_tv_alias"
+               android:layout_width="42dip"
+                android:layout_height="16dip"
+                
+                android:background="@drawable/my_center_daoshi_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/user_index_tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/center_flag"
+                android:layout_width="1dip"
+                android:layout_height="9dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#55ffffff" />
+
+            <TextView
+                android:id="@+id/user_index_tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/user_index_right_line"
+                android:layout_width="1dip"
+                android:layout_height="9dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#55ffffff" />
+
+            <TextView
+                android:id="@+id/user_index_tv_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="15dip" >
+
+        <Button
+            android:id="@+id/user_index_bt_follow"
+            android:layout_width="110dip"
+            android:layout_height="24dip"
+            android:background="@drawable/user_info_follow_bt_background"
+            android:gravity="center"
+            android:padding="1dip"
+            android:text="+关注"
+            android:textColor="#10BB7D"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/user_info_msg"
+            android:layout_width="110dip"
+            android:layout_height="24dip"
+            android:layout_marginLeft="40dip"
+            android:background="@drawable/user_info_msg_bt_background" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal" >
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="9dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/msg" />
+
+                <TextView
+                    android:id="@+id/user_index_bt_msn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:background="@null"
+                    android:text="私聊"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+   <!--  <ImageView
+        android:id="@+id/user_index_iv_back"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:padding="10dip"
+        android:src="@drawable/icon_back_whiter" />
+
+    <ImageView
+        android:id="@+id/user_index_iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="36dip"
+        android:layout_gravity="right"
+        android:padding="10dip"
+        android:src="@drawable/my_user_more" /> -->
+
+</FrameLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:paddingBottom="7dip"
+        android:gravity="bottom"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精选长文"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/index_video_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/more"
+            android:text="更多"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/index_public_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <com.vp.loveu.index.widget.RatioImageView
+            android:id="@+id/index_public_video_iv_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a1"
+            vp:ratio="1.8"
+            vp:relative="width" />
+
+        <com.vp.loveu.index.widget.RatioImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#702F0606"
+            vp:ratio="1.8"
+            vp:relative="width" />
+
+        <ImageView
+            android:id="@+id/index_video_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_index_video_play" />
+
+        <TextView
+            android:id="@+id/index_video_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="15dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="1"
+            android:text="从屌丝到男神，你必经的蜕变过程"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/index_video_hot_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line_bg"
+        android:paddingTop="15dip" />
+
+    <!--
+         <TextView
+        android:id="@+id/index_video_more"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="更多精彩长文"
+        android:textColor="#222222"
+        android:textSize="12sp" />
+    -->
+
+</LinearLayout>

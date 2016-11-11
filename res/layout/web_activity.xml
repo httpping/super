@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 切换的 上部分 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/active_web_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="44dp"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/active_web_bt_commit"
+            android:layout_width="fill_parent"
+            android:layout_height="49dip"
+           android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/active_web_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.vp.loveu.widget.TimeoutRemindView
+            android:id="@+id/timeoutRemindView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/active_web_webview"
+            android:background="@color/bg_gray"
+            android:visibility="gone" >
+
+        </com.vp.loveu.widget.TimeoutRemindView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:orientation="vertical"
+    >
+<RelativeLayout
+    android:id="@+id/disconver_user_root"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_line_bg"
+        android:id="@+id/discover_user_line"
+        />
+ <com.vp.loveu.widget.CircleImageView 
+     android:id="@+id/discover_user_icon_left"
+     android:layout_width="40dp"
+     android:layout_height="40dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="15dp"
+     android:src="@drawable/default_portrait"
+     />
+
+   
+   <TextView 
+           android:layout_toRightOf="@id/discover_user_icon_left"
+     android:layout_marginLeft="15dp"
+     android:layout_marginTop="20dp"
+           android:id="@+id/discover_user_nickname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ellipsize="end"
+           android:singleLine="true"
+           android:textColor="#262626"
+           android:textSize="@dimen/sub_textView_size15"
+           android:text="乌鸦救赎"
+       />
+   
+         <TextView 
+		        android:id="@+id/discover_user_price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="支付:￥998.00"
+		        android:textColor="@color/normal_bg_orange"
+		        android:textSize="@dimen/sub_textView_size10"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginBottom="2dp"
+		        android:layout_marginRight="15dp"
+		        />
+   
+        <TextView 
+		        android:id="@+id/discover_user_lesson_name"
+		        android:layout_toRightOf="@id/discover_user_icon_left"
+		        android:layout_marginLeft="15dp"
+		        android:layout_toLeftOf="@id/discover_user_price"
+		        android:layout_marginRight="15dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_marginBottom="2dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:ellipsize="end"
+                android:singleLine="true"
+		        android:text="购买:快速恋爱-让女生倒追你的方法"
+		        android:textColor="@color/sub_textView_color99"
+		        android:textSize="@dimen/sub_textView_size12"
+		        />
+   
+     <TextView 
+         
+		        android:id="@+id/discover_user_time"
+		        android:layout_alignParentRight="true"
+		          android:layout_marginTop="20dp"
+		          android:layout_marginRight="15dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="3分钟前"
+		        android:textColor="#D8D8D8"
+		        android:textSize="@dimen/sub_textView_size10"
+		        />
+    
+</RelativeLayout>
+<View 
+    android:id="@+id/discover_empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/white"
+    android:visibility="gone"
+    />
+</LinearLayout>

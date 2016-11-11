@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/bg_gray"
+        android:paddingBottom="7dip"
+        android:gravity="bottom"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐用户"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/index_hot_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="换一批"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/index_hot_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/index_hot_tv_rank"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/my_index_circle_shape"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="活跃排行榜"
+        android:textColor="@color/green_public"
+        android:textSize="16sp" />
+    
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line_bg" />
+
+</LinearLayout>

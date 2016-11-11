@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    
+<com.vp.loveu.widget.PublicTitleView
+    android:id="@+id/public_title_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/public_title_height"
+    android:layout_alignParentRight="true" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pay_success_icon"
+        android:layout_gravity="center_horizontal" 
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/sub_textView_size15"
+        android:textColor="#333333"
+        android:text="支付成功" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="30dp"
+         android:textSize="@dimen/text_size_five"
+        android:textColor="@color/sub_textView_color99"
+        android:text="@string/pay_success_remind" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="30dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/order_info_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/pay_green_corner_btn_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="订单信息"
+            android:textColor="@color/green_public"
+            android:textSize="@dimen/sub_textView_size14" />
+
+        <TextView
+            android:id="@+id/index_go_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/pay_green_corner_btn_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="首页"
+            android:textColor="@color/green_public"
+            android:textSize="@dimen/sub_textView_size14" />
+
+    </LinearLayout>
+
+</LinearLayout>

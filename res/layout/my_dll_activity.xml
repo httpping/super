@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+     android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+      <TextView 
+        style="@style/PublicEmptyView"
+        android:id="@+id/public_empty_view"
+        android:text="你还没有收藏任何动态"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/my_topic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@color/bg_gray"
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+
+        />
+   
+</RelativeLayout>

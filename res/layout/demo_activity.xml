@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vp="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <com.vp.loveu.widget.ZanAllHeadView
+        android:id="@+id/headView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        vp:image_padding="8dp"
+        vp:image_size="90dp"
+        vp:is_average="false"
+        vp:is_showCutLine="true"
+        vp:is_showNum="true"
+        vp:number_text_color="#ff0000" >
+    </com.vp.loveu.widget.ZanAllHeadView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectPhoto"
+        android:text="选择图片" />
+
+    <TextView
+        android:id="@+id/photo_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="share"
+        android:text="分享" />
+
+    <com.vp.loveu.widget.RecorderButton
+        android:background="#004400"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="dddddd" >
+    </com.vp.loveu.widget.RecorderButton>
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:onClick="aaa"
+        android:text="aaaaaaaaa"/>
+
+</LinearLayout>

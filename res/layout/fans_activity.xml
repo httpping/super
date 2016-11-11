@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip" >
+
+        <ImageView
+            android:id="@+id/fans_iv_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <com.vp.loveu.widget.PagerSlidingTabStrip
+            android:id="@+id/fans_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="44dip"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            app:pstsCountTextBackground="@android:color/white"
+            app:pstCountTextType="text"
+            app:pstsCountTextColor="#000000"
+            app:pstsTextSelectedColor="#000000"
+            app:pstsCountTextSize="12sp"
+            app:pstsDividerColor="#ffffff"
+            app:pstsIndicatorColor="#10BB7D"
+            app:pstsIndicatorHeight="2dip"
+            app:pstsShouldExpand="true"
+            app:pstsTabPaddingLeftRight="@dimen/dp20"
+            app:pstsUnderlineColor="#10BB7D"
+            app:pstsUnderlineHeight="0dip" >
+        </com.vp.loveu.widget.PagerSlidingTabStrip>
+    </RelativeLayout>
+	<View android:layout_width="match_parent" android:layout_height="1px" android:background="@color/divide_line_bg"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fans_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

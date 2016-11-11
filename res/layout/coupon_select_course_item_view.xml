@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+ android:layout_height="60dp"
+    android:paddingLeft="15dp"
+    android:background="@color/user_and_more_selector_bg"
+     >
+
+  
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/sub_textView_size14"
+        android:textColor="@color/normal_textView_color"
+        />
+
+    <TextView
+        android:id="@+id/course_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/course_name"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/share_text_color"
+        android:textSize="@dimen/sub_textView_size12" />
+
+	<ImageView
+                    android:id="@+id/selected_toggle"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/public_radio_selected_bg"
+                    />
+</RelativeLayout>

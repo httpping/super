@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" >
+
+        <TextView
+            android:id="@+id/message_help_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="12:00"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="@dimen/sub_textView_size12" />
+
+        <Button
+            android:id="@+id/message_help_package_price"
+            android:layout_width="74dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/commit_shape"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/message_help_reject_tv_answerer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="已拒绝回答"
+            android:textColor="@color/normal_bg_orange"
+            android:textSize="@dimen/sub_textView_size12"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal" >
+
+        <com.vp.loveu.widget.CircleImageView
+            android:id="@+id/message_help_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/overlayer" />
+
+        <TextView
+            android:id="@+id/message_help_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="娜娜"
+            android:textColor="#262626"
+            android:textSize="@dimen/sub_textView_size15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_help_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:text="cont"
+        android:textColor="@color/normal_textView_color"
+        android:textSize="@dimen/sub_textView_size14" />
+  
+     <com.vp.loveu.channel.widget.TopicPicContainer 
+        android:id="@+id/message_help_pic_ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+       /> 
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dip"
+        android:background="#ECECEC"
+        android:visibility="invisible" />
+
+    <!-- 回复view -->
+
+    <FrameLayout
+        android:id="@+id/reply_fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/reply_bt_record_green_shape"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/reply_bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/message_fellhelp_voice"
+            android:gravity="center"
+            android:text="建议60秒"
+            android:textColor="@color/normal_textView_color"
+            android:textSize="12sp" />
+    </FrameLayout>
+    <!-- 解答or拒绝view -->
+
+    <RelativeLayout
+        android:id="@+id/message_help_operator_container"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/message_help_bt_answerer"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/reply_bt_record_green_shape"
+            android:text="帮他解答"
+            android:textColor="@color/green_public"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/message_help_bt_reject"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/reply_bt_record_gray_shape"
+            android:text="残忍拒绝"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- 回复后view -->
+
+    <LinearLayout
+        android:id="@+id/reply_ly_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_marginBottom="12dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="12dip"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的解答"
+            android:textColor="#D8D8D8"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="74dip"
+            android:layout_height="27dip"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dip" >
+
+            <ImageView
+                android:id="@+id/reply_iv_playing"
+                android:layout_width="74dip"
+                android:layout_height="27dip"
+                android:src="@drawable/icon_voice_logo" />
+
+            <TextView
+                android:id="@+id/reply_tv_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dip"
+                android:gravity="center_vertical"
+                android:text="60"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        
+        <ImageView
+                android:id="@+id/reply_tv_record_cont_playering"
+                android:layout_width="7dip"
+                android:layout_height="7dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/red_circle_shape"
+                android:visibility="gone" >
+            </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/reply_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/reply_bt_send"
+                android:layout_width="60dip"
+                android:layout_height="24dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/reply_bt_record_green_shape"
+                android:text="发送"
+                android:textColor="@color/green_public"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/reply_bt_reset"
+                android:layout_width="45dip"
+                android:layout_height="24dip"
+                android:layout_marginRight="20dip"
+                android:layout_toLeftOf="@id/reply_bt_send"
+                android:background="@drawable/reply_bt_record_gray_shape"
+                android:text="重录"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 以往回复view -->
+
+    <RelativeLayout
+        android:id="@+id/message_before_help_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp" >
+
+        <TextView
+            android:id="@+id/message_help_tv_myanswerer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="我的解答 :"
+            android:textColor="#D8D8D8"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/message_help_tv_myanswerer" >
+
+            <TextView
+                android:id="@+id/message_before_help_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/normal_textView_color"
+                android:textSize="@dimen/sub_textView_size14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/message_before_help_cont_radio"
+                android:layout_width="74dp"
+                android:layout_height="27dp"
+                android:background="@drawable/icon_voice_logo"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="60&quot;"
+                android:textColor="@color/normal_textView_color"
+                android:textSize="@dimen/sub_textView_size12" />
+
+            <ImageView
+                android:id="@+id/message_before_help_cont_playering"
+                android:layout_width="7dip"
+                android:layout_height="7dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/message_before_help_cont_radio"
+                android:background="@drawable/red_circle_shape"
+                android:visibility="invisible" >
+            </ImageView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reply_bt_resend"
+            android:layout_width="70dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/reply_bt_record_yellow_shape"
+            android:text="重新发送"
+            android:textColor="#FF8000"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

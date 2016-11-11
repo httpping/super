@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="258dip"
+            android:background="#66ff88" >
+
+            <ImageView
+                android:id="@+id/my_index_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="14dip"
+                android:src="@drawable/my_btn_back" />
+
+            <ImageView
+                android:id="@+id/my_index_iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="10dip"
+                android:paddingTop="14dip"
+                android:src="@drawable/my_btn_share" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <com.vp.loveu.widget.CircleImageView
+                    android:id="@+id/my_index_iv_logo"
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:src="@drawable/overlayer" />
+
+                <TextView
+                    android:id="@+id/my_index_tv_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_horizontal"
+                    android:text="MOMO" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- 基本资料开始 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="117dip"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:text="基本资料"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/my_index_me_iv_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dip"
+                android:paddingTop="15dip"
+                android:src="@drawable/my_btn_zhankai" />
+
+            <com.vp.loveu.widget.XCFlowLayout
+                android:id="@+id/my_index_me_flowlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="51dip" />
+        </RelativeLayout>
+        <!-- 内心独白开始 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="86dip"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:text="内心独白"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/my_index_secret_iv_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dip"
+                android:paddingTop="15dip"
+                android:src="@drawable/my_btn_zhankai" />
+
+            <TextView
+                android:id="@+id/my_index_secret_tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="47dip"
+                android:text="九层妖塔其实还不错！"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!-- 最新动态 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="77dip"
+            android:layout_marginTop="10dip"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:text="最新动态"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/my_index_new_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dip"
+                android:paddingTop="15dip"
+                android:text="06.22"
+                android:textColor="#BBBBBB"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/my_index_new_tv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="47dip"
+                android:text="风景优美，多么美的景色！"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- 会变动的部分 -->
+
+        <com.vp.loveu.widget.CustomLinearLayout
+            android:id="@+id/my_index_customlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="375dip" >
+        </com.vp.loveu.widget.CustomLinearLayout>
+        <!-- 择偶条件 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="117dip"
+            android:layout_marginTop="10dip"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:text="择偶条件 "
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/my_index_obj_iv_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dip"
+                android:paddingTop="15dip"
+                android:src="@drawable/my_btn_zhankai" />
+
+            <com.vp.loveu.widget.XCFlowLayout
+                android:id="@+id/my_index_obj_flowlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="51dip" />
+        </RelativeLayout>
+
+        <!-- 婚姻期望 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="116dip"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:text="婚姻期望"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/my_index_expect_iv_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dip"
+                android:paddingTop="15dip"
+                android:src="@drawable/my_btn_zhankai" />
+
+            <com.vp.loveu.widget.XCFlowLayout
+                android:id="@+id/my_index_expect_flowlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="51dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

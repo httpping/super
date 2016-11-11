@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:paddingBottom="7dip"
+        android:paddingLeft="15dip"
+        android:gravity="bottom"
+        android:paddingRight="15dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新活动"
+            android:textColor="@color/sub_textView_color99"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/index_active_icon_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/more"
+            android:text="更多"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <include layout="@layout/index_active_item_show" />
+
+        <!-- 活动用户展示的容器 -->
+
+        <LinearLayout
+            android:id="@+id/index_active_animation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/index_active_infos_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dip"
+                android:background="@color/divide_line_bg" />
+        </LinearLayout>
+
+        <!-- 底部的动画开关 -->
+
+        <RelativeLayout
+            android:id="@+id/index_animation_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dip"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/index_animation_tv_togle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收起"
+                    android:textColor="#666666"
+                    android:textSize="12dip" />
+
+                <ImageView
+                    android:id="@+id/index_animation_iv_flag"
+                    android:layout_width="11dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="7dip"
+                    android:src="@drawable/icon_index_animation_flag" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仅剩"
+                    android:textColor="#999999"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:id="@+id/index_animation_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#F77600"
+                    android:textSize="10dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个名额"
+                    android:textColor="#999999"
+                    android:textSize="10dip" />
+                
+                <Button 
+                    android:id="@+id/index_active_btn_apply"
+                    android:layout_marginLeft="15dip"
+                    android:layout_width="74dip"
+                    android:layout_height="24dip"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:text="立即报名"
+                    android:background="@drawable/lijibaoming"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        
+         <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line_bg" />
+    </LinearLayout>
+
+</LinearLayout>

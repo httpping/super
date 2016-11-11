@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vp.loveu"
+    android:layout_width="match_parent"
+    android:layout_height="44dip"
+    android:background="@android:color/white"
+    android:minHeight="@dimen/dp50"
+    android:paddingBottom="@dimen/dp5"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    android:paddingTop="@dimen/dp5" >
+
+    <ImageView
+        android:id="@+id/btLeft"
+        android:layout_width="16dip"
+        android:layout_height="15dip"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btRight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:textColor="@color/color_tab_text_selected"
+        android:textSize="@dimen/text_size_title_right"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="TextView"
+        android:textColor="@color/color_tab_text_selected"
+        android:textSize="@dimen/textSize20" />
+
+    <com.vp.loveu.widget.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="44dip"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:pstCountTextType="text"
+        app:pstsCountTextBackground="@drawable/icon_reddot"
+        app:pstsCountTextColor="@color/color_tab_text_selected"
+        app:pstsCountTextSize="@dimen/dp10"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="#10BB7D"
+        app:pstsIndicatorHeight="3dip"
+        app:pstsShouldExpand="false"
+        app:pstsTabBackground="@android:color/transparent"
+        app:pstsTabPaddingLeftRight="@dimen/dp10"
+        app:pstsUnderlineColor="#10BB7D"
+        app:pstsUnderlineHeight="0dip" 
+        />
+
+</RelativeLayout>

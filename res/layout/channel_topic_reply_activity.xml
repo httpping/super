@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/channel_topic_reply_cont"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="说些什么..."
+                android:textColor="@color/normal_editText_color"
+                android:textColorHint="#CCCCCC"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/channel_topic_reply_pic_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/channel_topic_reply_iv_upload"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/channel_upload_pic" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="15dp"
+                android:background="#E5E5E5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp" >
+
+                <com.vp.loveu.widget.CircleImageView
+                    android:id="@+id/channel_topic_reply_iv_portrait"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/overlayer" />
+
+                <TextView
+                    android:id="@+id/channel_topic_reply_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/channel_topic_reply_iv_portrait"
+                    android:text="MOMO"
+                    android:textColor="@color/normal_textView_color"
+                    android:textSize="@dimen/sub_textView_size14" />
+
+                <TextView
+                    android:id="@+id/channel_topic_reply_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/channel_topic_reply_iv_portrait"
+                    android:text="xx年XX日 12:00"
+                    android:textColor="@color/sub_textView_color99"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/channel_topic_reply_tv_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/normal_textView_color"
+                android:textSize="@dimen/sub_textView_size14" />
+
+            <com.vp.loveu.index.widget.RecoderFrameLayout
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" >
+            </com.vp.loveu.index.widget.RecoderFrameLayout>
+
+            <ImageView
+                android:id="@+id/channel_topic_reply_default_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/channel_topic_reply_default_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

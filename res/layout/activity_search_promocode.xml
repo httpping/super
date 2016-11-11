@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.vp.loveu.widget.PublicTitleView
+        android:id="@+id/public_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:clickable="true" >
+    </com.vp.loveu.widget.PublicTitleView>
+
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="30dip"
+        android:paddingLeft="10dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/send_promocode_btn_shape"
+        android:hint="请输入优惠码"
+        android:textColor="#222222"
+        android:textColorHint="#D8D8D8"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/search_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="10dip"
+        android:text="TextView"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/search_bt_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="38dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="18dip"
+        android:background="@drawable/commit_shape"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>
